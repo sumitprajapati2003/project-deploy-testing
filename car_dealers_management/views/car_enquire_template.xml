@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <data>
+    <template id="car_enquire">
+      <t t-call="website.layout">
+        <t t-if="public_user" >
+
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+              <a t-attf-href="/web/signup/">Don't have an account?</a>
+            </div>
+          </div>
+        </t>
+        <t t-if=" not public_user">
+          <div class="container p-5  m-5 bg-100" >
+            <div class=" p-2  text-center display-6"  >Send Enquire Now</div>
+            <form action="/enquire-data" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+              <div class="mb-3">
+                <label for="partner_id" class="form-label">Seller/Buyer</label>
+                <select class="form-control" name="partner_id">
+                  <t t-foreach="partner_id" t-as="user">
+                    <option t-att-value="user.id">
+                      <t t-esc="user.name"/>
+                    </option>
+                  </t>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="car_model" class="form-label">Car Model</label>
+                <select class="form-control" name="fleet_id">
+                  <t t-foreach="fleet_id" t-as="f">
+                    <option t-att-value="f.id">
+                      <t t-esc="f.name"/>
+                    </option>
+                  </t>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="color" class="form-label">Color</label>
+                <input type="text" class="form-control" id="color" name="color" required="required"/>
+              </div>
+              <div class="mb-3">
+                <label for="model_year" class="form-label">Model Year</label>
+                <input type="number" class="form-control" id="model_year" name="model_year"/>
+              </div>
+              <div class="mb-3">
+                <label for="car_image" class="form-label">Car Image</label>
+                <input type="file" class="form-control" id="car_image" name="car_image"/>
+              </div>
+              <div class="mb-3">
+                <label for="model_year" class="form-label">Sell/Buy</label>
+                <select name="states" class="form-control">
+                  <option>sell</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="data_true" class="form-label">Currect All Data</label>
+                <input type="checkbox"  name="data_true" value="true" required="required"/>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-outline-dark btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </t>
+      </t>
+    </template>
+    <template id="enquire_successful">
+      <t t-call="website.layout">
+        <div class="container">
+          <p class="alert-success display-6 m-5 p-4 text-center">Thanks For Enquire We will see you soon
+                </p>
+        </div>
+      </t>
+    </template>
+  </data>
+</odoo>

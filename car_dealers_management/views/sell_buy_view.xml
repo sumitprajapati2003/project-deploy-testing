@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- tree View -->
+        <record id="sell_buy_view_tree" model="ir.ui.view">
+            <field name="name">sell/buy</field>
+            <field name="model">sell.buy</field>
+            <field name="arch" type="xml">
+                <tree string="sell Buy">
+                    <field name="partner_id"/>
+                    <field name="fleet_id"/>
+                    <field name="category"/>
+                    <field name="fuel_type"/>
+                    <field name="color"/>
+                    <field name="model_year"/>
+                    <field name="number_of_seats"/>
+                    <field name="car_price"/>
+                    <field name="customer_price"/>
+                    <field name="states"/>
+                </tree>
+            </field>
+        </record>
+        <!-- form view -->
+        <record id="sell_buy_view_form" model="ir.ui.view">
+            <field name="name">sell/buy</field>
+            <field name="model">sell.buy</field>
+            <field name="arch" type="xml">
+                <form string="sell buy">
+                    <header>
+                        <!-- <button name="search_records" type="object" string="Check Orm" class="oe_highlight"/> -->
+                        <button name="in_sell" invisible="states != 'purchased_by_customer'" type="object" string="sell" class="oe_highlight"/>
+                        <button name="in_buy" type="object" string="Buy" invisible="states != 'purchased_by_customer'" class="oe_highlight"/>
+                        <button name="mail_send" type="object" string="Send Email" class="oe_highlight" invisible="states != 'purchased_by_customer'"/>
+                        <field name="states" widget="statusbar" statusbar_visible="purchased_by_customer,sell,buy" class="oe_highlight" />
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="partner_id"/>
+                                <field name="fleet_id"/>
+                                <field name="category"/>
+                                <field name="fuel_type"/>
+                                <field name="car_price"/>
+                            </group>
+                            <group>
+                                <field name="car_image" widget="image" style=" width:100px"/>
+                                <field name="color"/>
+                                <field name="model_year"/>
+                                <field name="customer_email"/>
+                                <field name="states" invisible="1"/>
+                                <field name="customer_price"/>
+                                <field name="number_of_seats"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" groups="base.group_user"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="sell_buy_kanban_view" model="ir.ui.view">
+            <field name="name">Sell/Buy</field>
+            <field name="model">sell.buy</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_mobile">
+                    <field name="fleet_id"/>
+                    <field name="partner_id"/>
+                    <field name="category"/>
+                    <field name="fuel_type"/>
+                    <field name="model_year"/>
+                    <field name="states"/>
+                    <!-- <field name="car" widget="image"/> -->
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h3>
+                                            <field name="partner_id"/>
+                                        </h3>
+                                        <h3>
+                                            <field name="fleet_id"/>
+                                        </h3>
+                                        <h4>
+                                            <field name="category"/>
+                                        </h4>
+                                        <h4>
+                                            <field name="fuel_type"/>
+                                        </h4>
+                                        <h4>
+                                            <field name="model_year"/>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div>
+                                    <strong>Sell/Buy: </strong>
+                                    <t t-out="record.states.value"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        <!-- action -->
+        <record id="sell_buy_action" model="ir.actions.act_window">
+            <field name="name">Sell/Buy</field>
+            <field name="res_model">sell.buy</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+    </data>
+</odoo>

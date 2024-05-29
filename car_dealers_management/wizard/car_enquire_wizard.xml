@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="car_enquire_form_view" model="ir.ui.view">
+            <field name="name">enquire wizard</field>
+            <field name="model">car.enquire.wizard</field>
+            <field name="arch" type="xml">
+                <form string="building wizard">
+                    <group>
+                        <field name="partner_id"/>
+                        <field name="states" required="1"/>
+                        <field name="fleet_id" required="1"/>
+                        <field name="category"/>
+                        <field name="fuel_type"/>
+                        <field name="color"/>
+                        <field name="model_year"/>
+                        <field name="number_of_seats"/>
+                    </group>
+                    <span class="o_form_label"> confirm : Sell/Buy</span>                  
+                    <footer>
+                        <button string="Confirm" name="confirm" type="object" default_focus="1" class="btn-primary" data-hotkey="q"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_car_enquire_wizards" model="ir.actions.act_window">
+            <field name="name">enquire Wizard</field>
+            <field name="res_model">car.enquire.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="car_enquire_form_view"/>
+            <field name="context">{}</field>
+            <field name="target">new</field>
+            <field name="binding_model_id" ref="car_dealers_management.model_car_enquire" />
+            <field name="binding_view_types">list,form</field>
+        </record>
+    </data>
+</odoo>

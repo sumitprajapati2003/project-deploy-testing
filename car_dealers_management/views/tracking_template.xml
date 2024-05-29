@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="tracking_template">
+            <t t-call="website.layout">
+                <div class="container">
+                    <t t-if="public_user">
+                        <a t-attf-href="/web/signup/">Don't have an account?</a>
+                    </t>
+                    <t t-if=" not public_user">
+                        <h3 class="bg-o-color-2 text-center p-3">Car Order status</h3>
+                        <table class="table table-active table-striped">
+                            <tr>
+                                <th>Customer Name</th>
+                                <th>Car Model</th>
+                                <th>Category</th>
+                                <th>Model Of Cars</th>
+                                <th>Sell/buy</th>
+                            </tr>
+                            <tr t-foreach="search_user" t-as="rec">
+                                <td>
+                                    <span t-if="rec.partner_id.name" t-field="rec.partner_id.name"/>
+                                </td>
+                                <td>
+                                    <t t-esc="rec.fleet_id.name"/>
+                                </td>
+                                <td>
+                                    <span t-if="rec.category.name" t-field="rec.category.name"/>
+                                </td>
+                                <td>
+                                    <span t-if="rec.model_year" t-field="rec.model_year"/>
+                                </td>
+                                <td>
+                                    <span t-if="rec.states" t-field="rec.states" t-attf-class="{{'btn btn-info btn-sm' if rec.states=='purchased_by_customer' else 'btn btn-primary btn-sm'}}"/>
+                                </td>
+                            </tr>
+                            <tr t-foreach="search_enquire" t-as="enquire">
+                                <td>
+                                    <span t-if="enquire.partner_id.name" t-field="enquire.partner_id.name"/>
+                                </td>
+                                <td>
+                                    <span t-if="enquire.fleet_id.name" t-field="enquire.fleet_id.name"/>
+                                </td>
+                                <td>
+                                    <span t-if="enquire.category.name" t-field="enquire.category.name"/>
+                                </td>
+                                <td>
+                                    <span t-if="enquire.model_year" t-field="enquire.model_year"/>
+                                </td>
+                                <td >
+                                    <span t-attf-class="{{'btn btn-danger btn-sm' if enquire.states=='reject' else 'btn btn-success btn-sm'}}" t-if="enquire.states" t-field="enquire.states"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </t>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

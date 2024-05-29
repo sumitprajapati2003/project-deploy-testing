@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sell_buy_template">
+        <t t-call="web.html_container">
+            <div class="header">
+                <h2>Sell/Buy Information</h2>
+            </div>
+            <t t-call="web.internal_layout">
+                <h1>report ==================</h1>
+
+                <!-- <t t-set="seq" t-value="1" />
+                <t t-foreach="docs" t-as="o"> -->
+                    <div class="page">
+                        <div class="row">
+                            <div class="col-12" style="margin-top:100px;">
+                                <br />
+                                <br />
+                                <b>Building-Address :- <span t-out="building_address" /></b>
+                                <!-- <span t-field="o.building_image" t-options='{"widget":
+                                    "image","style": "height: 500px;"}' /> -->
+                                <img t-if="o.building_image" height="100px" width="150px"
+                                    t-att-src="image_data_uri(o.building_image)" alt="img" />
+                                <table class="table mt-3"
+                                    style="margin-top:100px;">
+                                    <thead>
+                                        <tr>
+                                            <th>Number</th>
+                                            <th>Building</th>
+                                            <th>Name</th>
+                                            <th>Date</th>
+                                            <th>Office</th>
+                                            <th>states</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span t-out="seq" />
+                                            </td>
+                                            <td>
+                                                <span t-out="o.name" />
+                                            </td>
+                                            <td>
+                                                <span t-if="o.user_id.name"
+                                                    t-field="o.user_id.name" />
+                                            </td>
+                                            <td>
+                                                <span t-if="o.today_date"
+                                                    t-field="o.today_date" />
+                                            </td>
+                                            <td>
+                                                <span t-if="o.office.name"
+                                                    t-field="o.office.name" />
+                                            </td>
+                                            <td>
+                                                <span t-if="o.states" t-field="o.states" />
+                                            </td>
+                                            <table class="table mt-3"
+                                                style="margin-top:100px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Number</th>
+                                                        <th>Floor Number</th>
+                                                        <th>Total Office</th>
+                                                        <th>office</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <t t-set="vals" t-value="1" />
+                                                    <t t-foreach="o.floar_line" t-as="a">
+                                                        <tr>
+                                                            <td>
+
+                                                                <h5>
+                                                                    <t t-esc="vals"
+                                                                    />
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                <h5>
+                                                                    <span t-if="a.floor_number"
+                                                                        t-field="a.floor_number" />
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                <h5>
+                                                                    <span
+                                                                        t-if="a.floar_total_office"
+                                                                        t-field="a.floar_total_office" />
+                                                                </h5>
+                                                            </td>
+                                                            <td>
+                                                                <h5>
+                                                                    <span
+                                                                        t-if="a.office_line.name"
+                                                                        t-field="a.office_line.name" />
+                                                                </h5>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- </t>     -->
+                                                        <t t-set="vals" t-value="vals+1" />
+                                                    </t>
+                                                </tbody>
+                                            </table>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="footer">
+                                <p>footer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <t t-set="seq" t-value="seq+1" />
+                <!-- </t> -->
+            </t>
+        </t>
+    </template>
+</odoo>    

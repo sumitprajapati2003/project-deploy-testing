@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="sell_cars" >
+            <t t-call="website.layout" >
+                <div class="container" style="background-image: url('car_dealers_management/static/img/back.jpg'); background-size: cover; background-size: contain; background-repeat: no-repeat;  background-size: 100% 100%" >
+                    <h3 class="bg-o-color-1 m-4 p-3 text-center"> Best Cars Deal</h3>
+                    <div class="container" >
+                        <div class="row">
+                            <!-- <div class="col-3"></div> -->
+                            <t t-foreach="sell_cars" t-as="car">
+                                <div class="col-4 border  bg-100 btn-lg">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <span t-field="car.car_image" t-options="{'widget': 'image'}" class="border"/>
+                                        </div>
+                                        <div class="col-6">Car Model :
+                                            <t t-esc="car.fleet_id.name"/>
+                                            <br/>
+                                            Category :
+                                            <t t-esc="car.category.name"/>
+                                            <br/>
+                                            <br/>
+                                            <form t-attf-action="/car-detail/{{car.id}}">
+
+                                                <button class="btn btn-outline-primary">
+                                                   Click Here
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+        <template id="car_detail">
+            <t t-call="website.layout">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="text-center">
+                            <t t-esc="sell_cars.fleet_id.name"/> Details
+                        </h3>
+                        <div class="col-2"></div>
+                        <div class="col-7 border p-5">
+                            <div>
+                                    Car Image
+                                <span t-field="sell_cars.car_image" t-options="{'widget': 'image'}" class="border"/>
+                                <br/>
+                            </div>
+                            <div>
+                                </div>
+                            <div class="row">
+                                <div class="col-6">
+                                        Car Model :
+                                    <t t-esc="sell_cars.fleet_id.name"/>
+                                    <br/>
+                                        Fuel Type :
+                                    <t t-esc="sell_cars.fuel_type"/>
+                                    <br/>
+                                </div>
+                                <div class="col-6">
+                                        Color :
+                                    <t t-esc="sell_cars.color"/>
+                                    <br/>
+                                        Category :
+                                    <t t-esc="sell_cars.category.name"/>
+                                    <br/>
+                                        Car Price :
+                                    <t t-esc="sell_cars.car_price"/>
+                                    <br/>
+                                </div>
+                                <form t-attf-action="/buy-successfully/{{sell_cars.id}}" method="post" enctype="multipart/form-data">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <div class="mb-3">
+                                        <label for="customer_price" class="form-label">Your Price</label>
+                                        <input type="text" name="customer_price" id="customer_price" minlength='6'/>
+                                    </div>
+                                    <t t-if="public_user">
+                                        <a t-attf-href="/web/signup/">Don't have an account?</a>
+                                    </t>
+                                    <t t-if="not public_user">
+                                        <button class="btn btn-warning m-2">Buy Now</button>
+                                    </t>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+        <template id="car_successfully_buys">
+            <t t-call="website.layout">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="text-center">
+                            <p class="alert-success display-6 m-5 p-4 text-center">Successfully Send buy Enquire</p>
+                        </h3>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

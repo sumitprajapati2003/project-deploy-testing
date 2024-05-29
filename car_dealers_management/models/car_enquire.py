@@ -20,7 +20,6 @@ class CarEnquire(models.Model):
     def in_sell(self):
         for rec in self:
             rec.states="sell"
-            print('------------------------rec-----------')
     def in_buy(self):
         for rec in self:
             rec.states="buy"

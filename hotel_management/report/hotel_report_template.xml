@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <!-- Report Layout -->
+        <template id="hotel_report">
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <!-- Header -->
+                    <div class="header">
+                        <h1>Hotel Room Out Report</h1>
+                        <!-- <p>Date: <span t-field="room.from_book_date"/></p> -->
+                    </div>
+                    <!-- Content -->
+                    <div class="content">
+                        <!-- Room Out Details -->
+                        <h2>Room Out Details</h2>
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Room Number</th>
+                                    <th>Guest Name</th>
+                                    <th>Check-In Date</th>
+                                    <th>Check-Out Date</th>
+                                    <th>Mobile Number</th>
+                                    <th>Room Type</th>
+                                    <th>Room Type</th>
+                                    <th>Room Price</th>
+                                    <!-- Add more columns as needed -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="docs" t-as="room">
+                                    <tr>
+                                        <td><span t-field="room.rooms"/></td>
+                                        <td><span t-field="room.person_name"/></td>
+                                        <td><span t-field="room.from_book_date"/></td>
+                                        <td><span t-field="room.to_book_date"/></td>
+                                        <td><span t-field="room.mobile"/></td>
+                                        <td><span t-field="room.room_type_names"/></td>
+                                        <td><span t-field="room.room_price"/></td>
+                                        <td><span t-field="room.total_price"/></td>
+
+                                        <!-- Add more fields as needed -->
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </t>
+        </template>
+        
+       
+    </data>
+</odoo>

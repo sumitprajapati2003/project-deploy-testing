@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hotel_amenities_view_tree" model="ir.ui.view">
+            <field name="name">Hotel Room</field>
+            <field name="model">hotel.amenities</field>
+            <field name="arch" type="xml">
+                <tree string="Amenities List" >
+                    <field name="room_type"/>
+                    <field name="person"/>
+                    <field name="room_price"/>
+
+                </tree>
+            </field>
+        </record> 
+        <record id="hotel_amenities_view_form" model="ir.ui.view">
+            <field name="name">Hotel Amenities</field>
+            <field name="model">hotel.amenities</field>
+            <field name="arch" type="xml">
+                <form string="Amenities Detail">  
+                    <sheet>
+                        <group>
+                              <field name="room_type"/>
+                              <field name="person"/>
+                            <field name="room_price"/>
+
+                        </group>   
+                         <notebook>
+                                <page name="Amenities" string="Amenities">
+                                    <field name='amenities_group_ids'>
+                                        <tree>
+                                                <field name="name"/>
+                                               
+                                        </tree>
+                                    </field>
+                                </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="hotel_amenities_action">
+            <field name="name">Hotel Amenities</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hotel.amenities</field>
+            <field name="view_mode">tree,form</field>
+            <!-- <field name='context'>{'search_default_age':0}</field> -->
+        </record>
+
+
+    </data>
+</odoo>  

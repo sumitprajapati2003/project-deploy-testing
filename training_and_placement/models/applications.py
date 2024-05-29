@@ -49,6 +49,7 @@ class Applications(models.Model):
     
     def action_open_multi_step_wizard(self):
         self.ensure_one()
+        print("git change>>>>>>>>>>>>>>>>>>>>")
         action = self.env.ref('training_and_placement.action_multi_step_wizard').read()[0]
         action['context'] = {
             'default_student_id': self.student_id.id,

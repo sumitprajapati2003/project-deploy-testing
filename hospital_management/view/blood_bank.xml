@@ -1,0 +1,35 @@
+<odoo>
+    <record id="view_blood_bank_tree" model="ir.ui.view">
+        <field name="name">blood.bank.tree</field>
+        <field name="model">blood.bank</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="blood_group"/>
+                <field name="quantity"/>
+            </tree>
+        </field>    
+    </record>
+
+    <record id="view_blood_bank_form" model="ir.ui.view">
+        <field name="name">blood.bank.form</field>
+        <field name="model">blood.bank</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="blood_group"/>
+                        <field name="quantity"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="blood_bank_action" model="ir.actions.act_window">
+        <field name="name">Blood Bank</field>
+        <field name="res_model">blood.bank</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

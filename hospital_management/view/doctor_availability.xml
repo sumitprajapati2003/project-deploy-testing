@@ -1,0 +1,64 @@
+<odoo>
+    <record id="view_doctor_availability_tree" model="ir.ui.view">
+        <field name="name">hm.doctor_availability.tree</field>
+        <field name="model">hm.doctor_availability</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="doctor_id"/>
+                <field name="day_ids" widget="many2many_tags"/>
+                <field name="start_time" widget="float_time"/>
+                <field name="end_time" widget="float_time"/>
+            </tree>
+        </field>    
+    </record>
+<!-- 
+    <record id="view_doctor_availability_kanban" model="ir.ui.view">
+        <field name="name">hm.doctor_availability.kanban</field>
+        <field name="model">hm.doctor_availability</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile" sample="1"> -->
+                <!-- <templates> -->
+                    <!-- <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_card">
+                            <field name="doctor_id"/>
+                            <field name="day_ids"/>
+                            <field name="start_time" widget="float_time"/> / 
+                            <field name="end_time" widget="float_time"/>
+                        </div>
+                    </t> -->
+                <!-- </templates> -->
+            <!-- </kanban>
+        </field>
+    </record> -->
+
+    <record id="view_doctor_form" model="ir.ui.view">
+        <field name="name">hm.doctor_availability.form</field>
+        <field name="name">hm.doctor_availability.form</field>
+        <field name="model">hm.doctor_availability</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Doctor">
+                <sheet>
+                    <group col="4">
+                        <field name="doctor_id"/>
+                    </group>
+                    <group col="4">
+                        <field name="day_ids" widget="many2many_tags"    options="{'no_open': True, 'no_create': True}"/>
+                        <field name="start_time"  widget="float_time"/>
+                        <field name="end_time"  widget="float_time"/>
+                        <!-- <filter name="day_filter" string="Day" domain="([('day', '=', 'onday')])"/> -->
+                    </group>                
+                    
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hm_doctor_availability_model_action" model="ir.actions.act_window">
+        <field name="name">Doctor Availability</field>
+        <field name="res_model">hm.doctor_availability</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

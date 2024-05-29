@@ -1,0 +1,31 @@
+<odoo>
+    <menuitem id="hospital_root" name="Hospital"/>
+
+     <!-- Doctor -->
+     <menuitem id="menu_doctor" name="Doctor" parent="hospital_root" sequence="10"/>
+     <!-- <menuitem id="sub_manu_doctor" name="Doctor" action="doctor_model_action" parent="menu_doctor" sequence="10"/> -->
+     <menuitem id="sub_menu_dr_specialties" name="Doctor Specialties" action="dr_specialties_model_action" parent="menu_doctor" sequence="20"/>
+     <menuitem id="sub_menu_doctor_availability" name="Doctor Availability" action="hm_doctor_availability_model_action" parent="menu_doctor" sequence="30"/>
+
+    <!-- Member -->
+    <menuitem id="menu_members" name="Members" parent="hospital_root" sequence="20"/>
+    <menuitem id="sub_menu_patient" name="Patient" action="member_model_action" parent="menu_members" sequence="20"/>
+    <menuitem id="sub_menu_staff" name="Staff" action="staff_model_action" parent="menu_members" sequence="30"/>
+
+    <!-- <menuitem id="menu_patient" name="Patient" action="base.action_partner_form" parent="hospital_root" sequence="20"/> -->
+    <menuitem id="sub_menu_disease" name="Disease" action="patient_disease_model_action" parent="hospital_root" sequence="40"/>
+    <menuitem id="sub_menu_department" name="Staff Category" action="department_model_action" parent="hospital_root" sequence="50"/>
+
+   
+    <!-- Blood Bank -->
+    <menuitem id="menu_blood_bank" name="Blood Bank" parent="hospital_root" sequence="60"/>
+    <menuitem id="sub_menu_blood_donor" name="Donor" parent="menu_blood_bank" action="blood_donor_action" sequence="10"/>
+    <menuitem id="sub_menu_blood_bank" name="Blood Bank" parent="menu_blood_bank" action="blood_bank_action" sequence="20"/>
+    <menuitem id="sub_menu_blood_request" name="Blood Request" parent="menu_blood_bank" action="blood_request_action" sequence="30"/>
+
+    <!-- Appointments -->
+    <menuitem id="menu_appointment_root" name="Appointments"  parent="hospital_root" sequence="70"/>
+    <menuitem id="menu_appointment" name="Appointments" parent="menu_appointment_root" action="action_view_appointment"/>
+
+
+</odoo>

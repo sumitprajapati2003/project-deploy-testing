@@ -1,0 +1,49 @@
+<odoo>
+    <record id="view_patient_disease_tree" model="ir.ui.view">
+        <field name="name">patient.disease.tree</field>
+        <field name="model">patient.disease</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="disease_name"/>
+                <field name="specialty_id"/>
+            </tree>
+        </field>    
+    </record>
+
+    <record id="view_patient_disease_form" model="ir.ui.view">
+        <field name="name">patient.disease.form</field>
+        <field name="model">patient.disease</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="disease_name"/>
+                        <!-- <field name="specialty_id"/> -->
+                    </group>
+                </sheet>
+                <notebook>
+                    <page string="Category Information">
+                        <group>
+                            <group>
+                                <field name="specialty_id"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook> 
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="patient_disease_model_action" model="ir.actions.act_window">
+        <field name="name">Patient Disease</field>
+        <field name="res_model">patient.disease</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

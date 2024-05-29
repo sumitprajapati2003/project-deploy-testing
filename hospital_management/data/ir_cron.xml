@@ -1,0 +1,13 @@
+<odoo>
+    <record id="ir_cron_appointment_mail_reminder" model="ir.cron">
+        <field name="name">Patient</field>
+        <!-- <field name="model_id" ref="model_res_partner"/> -->
+        <field name="model_id" ref="model_appointment_appointment"/>
+        <field name="state">code</field>
+        <field name="code">model.appointment_mail_reminder()</field>
+        <field name="user_id" ref="base.user_root"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
+    </record>
+</odoo>

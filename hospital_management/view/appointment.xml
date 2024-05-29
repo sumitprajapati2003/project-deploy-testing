@@ -1,0 +1,62 @@
+<!-- appointment_views.xml -->
+
+<odoo>
+    <!-- Tree View -->
+    <record id="view_appointment_tree" model="ir.ui.view">
+        <field name="name">appointment.appointment.tree</field>
+        <field name="model">appointment.appointment</field>
+        <field name="arch" type="xml">
+            <tree string="Appointments">
+                <field name="patient_id"/>
+                <field name="doctor_id"/>
+                <field name="booking_date"/>
+                <field name="appointment_time"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_appointment_form" model="ir.ui.view">
+        <field name="name">appointment.appointment.form</field>
+        <field name="model">appointment.appointment</field>
+        <field name="arch" type="xml">
+            <form string="Appointment">
+                <group>
+                    <field name="patient_id"/>
+                    <field name="doctor_id"/>
+                    <field name="day_ids" widget="many2many_tags"/>
+                    <field name="doctor_availability"/>
+                    <field name="booking_date"/>
+                    <field name="appointment_time" widget="float_time"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!-- Kanban View -->
+    <record id="view_appointment_kanban" model="ir.ui.view">
+        <field name="name">appointment.appointment.kanban</field>
+        <field name="model">appointment.appointment</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates> 
+                    <t t-name="kanban-box">
+                        <field name="patient_id"/>
+                        <field name="doctor_id"/>
+                        <field name="booking_date"/>
+                        <field name="appointment_time"/>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Menu Action -->
+    <record id="action_view_appointment" model="ir.actions.act_window">
+        <field name="name">Appointments</field>
+        <field name="res_model">appointment.appointment</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <!-- Menu Item -->
+</odoo>

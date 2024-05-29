@@ -1,0 +1,209 @@
+<odoo>
+    <data>
+        <record id="patient_disease_id_1" model="patient.disease">
+            <field name="disease_name">Skin and soft tissue issues</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_general" />
+        </record> 
+        
+        <record id="patient_disease_id_2" model="patient.disease">
+            <field name="disease_name">Gallbladder diseases</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_general" />
+        </record>
+
+        <record id="patient_disease_id_3" model="patient.disease">
+            <field name="disease_name">Stomach and intestinal issues</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_general" />
+        </record>
+
+    </data> 
+    <data>
+        <record id="patient_disease_id_4" model="patient.disease">
+            <field name="disease_name">Asthma</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_pulmonologist"></field>
+        </record>
+        <record id="patient_disease_id_5" model="patient.disease">
+            <field name="disease_name">Chronic obstructive pulmonary disease (COPD)</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_pulmonologist"></field>
+        </record>
+        <record id="patient_disease_id_6" model="patient.disease">
+            <field name="disease_name">Lung cancer</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_pulmonologist"></field>
+        </record> 
+        <record id="patient_disease_id_7" model="patient.disease">
+            <field name="disease_name">Sleep apnea</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_pulmonologist"></field>
+        </record>
+    </data> 
+
+    <data>
+        <record id="patient_disease_id_8" model="patient.disease">
+            <field name="disease_name">Prenatal care</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_obstetrician"></field>
+        </record>
+        <record id="patient_disease_id_9" model="patient.disease">
+            <field name="disease_name">Labor and delivery</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_obstetrician"></field>
+        </record>
+        <record id="patient_disease_id_10" model="patient.disease">
+            <field name="disease_name">Postpartum care</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_obstetrician"></field>
+        </record>
+         <record id="patient_disease_id_11" model="patient.disease">
+            <field name="disease_name">High-risk pregnancies</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_obstetrician"></field>
+        </record>
+    </data> 
+
+    <data>
+        <record id="patient_disease_id_12" model="patient.disease">
+            <field name="disease_name">Respiratory issues in newborns</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_neonatologist"></field>
+        </record>
+        <record id="patient_disease_id_13" model="patient.disease">
+            <field name="disease_name">Birth defects</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_neonatologist"></field>
+        </record>
+        <record id="patient_disease_id_14" model="patient.disease">
+            <field name="disease_name">Premature birth complications</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_neonatologist"></field>
+        </record>
+      
+    </data>
+
+    <data>
+        <record id="patient_disease_id_15" model="patient.disease">
+            <field name="disease_name">Childhood infections</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_pediatrician"></field>
+        </record>
+        <record id="patient_disease_id_16" model="patient.disease">
+            <field name="disease_name">Vaccinations</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_pediatrician"></field>
+        </record>
+        <record id="patient_disease_id_17" model="patient.disease">
+            <field name="disease_name">Growth and development concerns</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_pediatrician"></field>
+        </record>
+        <record id="patient_disease_id_18" model="patient.disease">
+            <field name="disease_name">Behavioral issues</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_pediatrician"></field>
+        </record>
+       
+    </data>
+
+    <data>
+        <record id="patient_disease_id_19" model="patient.disease">
+            <field name="disease_name">Menstrual disorders</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_gynecologist"></field>
+        </record>
+         <record id="patient_disease_id_20" model="patient.disease">
+            <field name="disease_name">Endometriosis</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_gynecologist"></field>
+        </record>
+         <record id="patient_disease_id_21" model="patient.disease">
+            <field name="disease_name">Cervical and ovarian cancers</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_gynecologist"></field>
+        </record>
+        <record id="patient_disease_id_22" model="patient.disease">
+            <field name="disease_name">Infertility issues</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_gynecologist"></field>
+        </record>
+        
+    </data>
+
+    <data>
+        <record id="patient_disease_id_23" model="patient.disease">
+            <field name="disease_name">Kidney stones</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_urologist"></field>
+        </record>
+        <record id="patient_disease_id_24" model="patient.disease">
+            <field name="disease_name">Prostate issues</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_urologist"></field>
+        </record>
+        <record id="patient_disease_id_25" model="patient.disease">
+            <field name="disease_name">Bladder issues</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_urologist"></field>
+        </record>     
+        <record id="patient_disease_id_26" model="patient.disease">
+            <field name="disease_name">Urinary tract infections</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_urologist"></field>
+        </record>
+
+    </data>
+
+    <data>
+        <record id="patient_disease_id_27" model="patient.disease">
+            <field name="disease_name">Irritable bowel syndrome (IBS)</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_gastroenterologist"></field>
+        </record>
+        <record id="patient_disease_id_28" model="patient.disease">
+            <field name="disease_name">Crohn's disease</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_gastroenterologist"></field>
+        </record>
+        <record id="patient_disease_id_29" model="patient.disease">
+            <field name="disease_name">Ulcerative colitis</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_gastroenterologist"></field>
+        </record>
+        <record id="patient_disease_id_30" model="patient.disease">
+            <field name="disease_name">Liver diseases</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_gastroenterologist"></field>
+        </record>
+
+    </data>
+
+    <data>
+        <record id="patient_disease_id_31" model="patient.disease">
+            <field name="disease_name">Hypertension-related kidney issues</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_nephrologist"></field>
+        </record>
+        <record id="patient_disease_id_32" model="patient.disease">
+            <field name="disease_name">Dialysis treatment</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_nephrologist"></field>
+        </record>
+        <record id="patient_disease_id_33" model="patient.disease">
+            <field name="disease_name">Chronic kidney disease</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_nephrologist"></field>
+        </record>
+        <record id="patient_disease_id_34" model="patient.disease">
+            <field name="disease_name">Prostate issues</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_nephrologist"></field>
+        </record>
+
+    </data>
+    <data>
+        <record id="patient_disease_id_35" model="patient.disease">
+            <field name="disease_name">Epilepsy</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_neurologist"></field>
+        </record> 
+        <record id="patient_disease_id_36" model="patient.disease">
+            <field name="disease_name">Migraines</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_neurologist"></field>
+        </record> 
+        <record id="patient_disease_id_37" model="patient.disease">
+            <field name="disease_name">Multiple sclerosis</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_neurologist"></field>
+        </record> 
+        <record id="patient_disease_id_38" model="patient.disease">
+            <field name="disease_name">Alzheimer</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_neurologist"></field>
+        </record>
+    </data>
+
+    <data>
+        <record id="patient_disease_id_39" model="patient.disease">
+            <field name="disease_name">Diabetes</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_endocrinologist"></field>
+        </record> 
+        <record id="patient_disease_id_40" model="patient.disease">
+            <field name="disease_name">Thyroid disorders</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_endocrinologist"></field>
+        </record> 
+        <record id="patient_disease_id_41" model="patient.disease">
+            <field name="disease_name">Osteoporosis</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_endocrinologist"></field>
+        </record> 
+        <record id="patient_disease_id_42" model="patient.disease">
+            <field name="disease_name">Hormonal imbalances</field>
+            <field name="specialty_id" ref="hospital_management.dr_specialties_id_endocrinologist"></field>
+        </record>
+    </data>
+</odoo>

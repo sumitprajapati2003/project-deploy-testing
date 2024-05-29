@@ -1,0 +1,63 @@
+<odoo>
+    <template id="room_booking_template">
+        <t t-call="website.layout">
+            <div class="container">
+                <div class="container bg-500 bg-black-15 container p-5 w-75 "
+                    style="margin-top: 30px; margin-bottom: 38px;">
+                    <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Room Book Form</h3>
+                    <form id="student_form" name="student_form" action='/register/submit' method='post'
+                        enctype="multipart/form-data">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                        <div class="mb-3 form-group">
+                            <label for="student_mail" class="form-label">Room Number</label>
+                            <input type="text" class="form-control" id="room_number"
+                                name='rooms' required='required' />
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="student_mail" class="form-label">Room Type</label>
+                            <input type="text" class="form-control" id="room_in_date"
+                                name='room_type_names' required='required' />
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="student_mail" class="form-label">Room In Date</label>
+                            <input type="date" class="form-control" id="room_in_date"
+                                name='from_book_date' required='required' />
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="student_mail" class="form-label">Room Out Date</label>
+                            <input type="date" class="form-control" id="room_out_date"
+                                name='to_book_date' required='required' />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="person_name"
+                                required='required' />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="phone">Phone:</label>
+                            <input type="number" class="form-control" id="phone" name="mobile" />
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="student_mail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="student_mail"
+                                name='customer_mail' required='required' />
+                        </div>
+                        <div class="mb-3 orm-group">
+                            <label for="website" class="form-label">website</label>
+                            <select class="form-select" name="website">
+                                <t t-foreach="websites" t-as="website">
+                                    <option t-att-value="website.name">
+                                        <t t-esc="website.name" />
+                                    </option>
+                                </t>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </t>
+
+    </template>
+</odoo>

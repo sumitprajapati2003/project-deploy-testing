@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="hotel_room_template" name='room name'>
+        <t t-call="website.layout">
+            <t t-set="title">Room Detail</t>
+
+            <div class="container p-4">
+                <div class="row m-3">
+                    <t t-foreach='records' t-as='rec'>
+                        <t t-if="rec.room_type_id.room_type == 'deluxe'">
+                            <div class="col-4 border">
+                                <h4>Deluxe Room</h4>
+                                <div class="card-body border">
+                                    <h5 class="card-title">Room Number: <t t-esc='rec.name' />
+                                    </h5>
+                                    <p class="card-text">Room Type: <t
+                                            t-esc='rec.room_type_id.room_type' /></p>
+                                    <a class="btn btn-primary" t-attf-href='/room-detail/{{rec.id}}'>
+                                        Click</a>
+                                </div>
+                            </div>
+                        </t>
+                        <t t-if="rec.room_type_id.room_type == 'king_size'">
+                            <div class="col-4 border">
+                                <h4>King Size Room</h4>
+                                <div class="card-body border">
+                                    <h5 class="card-title">Room Number: <t t-esc='rec.name' />
+                                    </h5>
+                                    <p class="card-text">Room Type: <t
+                                            t-esc='rec.room_type_id.room_type' /></p>
+                                    <a class="btn btn-primary" t-attf-href='/room-detail/{{rec.id}}'>
+                                        Click</a>
+                                </div>
+                            </div>
+                        </t>
+                        <t t-if="rec.room_type_id.room_type == 'super_deluxe'">
+                            <div class="col-4 border">
+                                <h4> Super Deluxe </h4>
+                                <div class="card-body border">
+                                    <h5 class="card-title">Room Number: <t t-esc='rec.name' />
+                                    </h5>
+                                    <p class="card-text">Room Type: <t
+                                            t-esc='rec.room_type_id.room_type' /></p>
+                                    <a class="btn btn-primary" t-attf-href='/room-detail/{{rec.id}}'>
+                                        Click</a>
+                                </div>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+            </div>
+
+
+        </t>
+    </template>
+    <template id="rooms_detail_template" name="rooms name">
+        <t t-call="website.layout">
+            <div class="container">
+                <div class="row w-75">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="card" >
+                            <img src="/hotel_management/static/description/room.jpg" alt="Room Photo" />
+                            <div class="card-body bg-200">
+                                <h5 class="card-title">Room Detail</h5>
+                                <h4 class="card-text">
+                                    Room Number: <span t-field='records.name' /><br/> 
+                                    Room Type: <span t-field='records.room_type_id.room_type' /><br/> 
+                                    Room Price: <span t-field='records.room_type_id.room_price' /><br/> 
+                                    Allowed Person: <span t-field='records.room_type_id.person' />
+
+                                </h4>
+                                <a class="btn btn-primary" t-attf-href='/book-room/{{records.id}}'>
+                                    Book Room</a>
+                                <a class="btn btn-primary" t-attf-href='/rooms'>
+                                        Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
+
+
+<!-- <div class="container" t-foreach='records' t-as='rec'>
+                <div class="row" >
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Room Number: <t t-esc='rec.name'/></h5>
+                                <p class="card-text">Room Type: <t t-esc='rec.room_type_id.room_type'/></p>
+                                <! <p class="card-text">Check-out Date: ${rec.checkout_date}</p> -->
+<!-- <p class="card-text">Total Price:<t t-esc='rec.room_type_id.room_price'/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                         <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div> 
+     -->
+<!-- <div class="container">
+                <h4> 
+                    Room Detail
+                </h4>
+
+
+                <table class="table table-striped table-active">
+                        <tr>
+                            <th>Room Number</th>
+                            <th>Room Type</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr t-foreach='records' t-as='rec'>
+                            <td>
+                                    <a t-attf-href='/student-detail/#{slug(rec)}'>
+                                        <t t-esc='rec.code'/>
+                                    </a>   
+                                    <a t-attf-href='/student-detail/{{rec.id}}'>
+                                        <t t-esc='rec.code'/>
+                                    </a>    
+                                </td>  
+                                <td t-esc='rec.name'></td>
+                                <td t-esc='rec.room_type_id'></td>
+                        </tr>
+                </table>
+            </div> -->
+     

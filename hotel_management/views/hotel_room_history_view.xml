@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hotel_room_history_view_tree" model="ir.ui.view">
+            <field name="name">Room History</field>
+            <field name="model">room.history</field>
+            <field name="arch" type="xml">
+                <tree string="Room History" >
+                    <field name="from_book_date"/>
+                    <field name="to_book_date"/>
+                    <field name="mobile"/>
+                    <field name="rooms"/>
+                    <field name="person_name" />
+                    <field name="room_type_names"/>
+                    <field name="state"  widget='badge' decoration-success="state == 'check_in'" decoration-danger="state == 'check_out'"/>
+                </tree>
+            </field>
+        </record> 
+        <record id="hotel_room_history_view_form" model="ir.ui.view">
+            <field name="name">Room History</field>
+            <field name="model">room.history</field>
+            <field name="arch" type="xml">
+                <form string="Room History">  
+                    <sheet>
+                        <group>
+                                 <field name="from_book_date"/>
+                                <field name="to_book_date"/>
+                                <field name="mobile"/>
+                                <field name="rooms"/>
+                                <field name="room_price" />
+                                <field name="total_price" />
+                                <field name="person_name" />
+                                <field name="room_type_names"/>
+                                <field name="state" />
+                        </group>   
+                    </sheet>
+                </form>
+            </field>
+        </record>
+              
+
+
+        <record model="ir.actions.act_window" id="hotel_room_history_action">
+            <field name="name">Room History</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">room.history</field>
+            <field name="view_mode">tree,form</field>
+            <!-- <field name='context'>{'search_default_age':0}</field> -->
+        </record>
+
+
+    </data>
+</odoo>  

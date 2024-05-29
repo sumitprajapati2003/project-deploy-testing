@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+            <record id="mail_template_room_book" model="mail.template">
+                    <field name="name">Room Book Mail</field>
+                    <field name="model_id" ref="hotel_management.model_room_book"/>
+                    <field name="email_from">{{object.person_name.email}}</field>
+                    <field name="email_to">{{object.customer_email}}</field>
+                    <field name="subject">Room Detail Mail</field>
+                    <!-- <field name="report_template_ids" eval="[(4, ref('school_management.student_detail_report_1'))]"/> -->
+                    <field name="body_html" type="html">
+                        <style>
+                            .container {
+                                max-width: 600px;
+                                margin: 0 auto;
+                                padding: 20px;
+                                background-color: #ffffff;
+                                border-radius: 10px;
+                                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                            }
+                            h1 {
+                                color: #007bff;
+                            }
+                            .hotel-details {
+                                margin-top: 20px;
+                                border-collapse: collapse;
+                                width: 100%;
+                            }
+                            .hotel-details th,
+                            .hotel-details td {
+                                border: 1px solid #dddddd;
+                                text-align: left;
+                                padding: 8px;
+                            }
+                            .hotel-details th {
+                                background-color: #f2f2f2;
+                            }
+                    </style>
+                    <!-- Email content -->
+                    <div class="container">
+                        <h1>Room Book  Email </h1>
+                        <p>Below are the details of the room:</p>
+                        <table class="hotel-details">
+                            <tr>
+                            <tr>
+                                <th>Room Number</th>
+                                <td><span t-out="object.rooms_id"/></td> 
+                            </tr> 
+                             <!-- <tr>
+                                <th>Room Type</th>
+                                <td><span t-out="object.room_type"/></td> 
+                            </tr> -->
+                                <th>Name</th>
+                                <td><span t-out="object.person_name.name"/></td>
+                            </tr>
+                            <tr>
+                                <th>Phone</th>
+                                <td><span t-out="object.mobile"/></td>
+                            </tr>
+                            <tr>
+                                <th>Room Book Date</th>
+                                <td><span t-out="object.from_book_date"/></td> 
+                            </tr>
+                             <tr>
+                                <th>Room Out Date</th>
+                                <td><span t-out="object.to_book_date"/></td> 
+                            </tr>
+                           
+                            <!-- Add more student details as needed -->
+                        </table>
+                    </div>
+                    </field>
+            </record>
+    </data>
+</odoo>    

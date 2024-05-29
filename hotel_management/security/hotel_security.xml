@@ -1,0 +1,72 @@
+<odoo>
+
+    <record model="ir.module.category" id="module_category_hotel_management">
+            <field name="name">Hotel Management</field>
+            <field name="sequence">50</field>
+    </record>
+
+    <record id="group_receptionist" model="res.groups">
+            <field name="name">Receptionist</field>
+            <field name="category_id" ref="module_category_hotel_management"/>
+    </record>
+    <record id="group_admin_hotel" model="res.groups">
+        <field name="name">Hotel Admin</field>
+        <field name="category_id" ref="module_category_hotel_management"/>
+        <field name="implied_ids" eval="[(4, ref('hotel_management.group_receptionist'))]"/>
+
+    </record>
+   
+
+    <record id="receptionist_record_rule_hotel_room" model="ir.rule">
+        <field name="name"> receptionist Record Rule</field>
+        <field name="model_id" ref="model_hotel_room"/>
+        <field name='groups' eval='[(4,ref("hotel_management.group_receptionist"))]'/>
+        <!-- <field name="domain_force">[('parent_id', '=', user.partner_id.id)]</field> -->
+    </record> 
+
+    <record id="all_record_rule_hotel_room" model="ir.rule">
+        <field name="name">All Record Rule</field>
+        <field name="model_id" ref="model_hotel_room"/>
+        <field name='groups' eval='[(4,ref("hotel_management.group_admin_hotel"))]'/>
+        <!-- <field name="domain_force">[(1, '=', 1)]</field> -->
+    </record> 
+
+
+    <record id="receptionist_record_rule_hotel_amenities" model="ir.rule">
+        <field name="name"> receptionist Record Rule</field>
+        <field name="model_id" ref="model_hotel_amenities"/>
+        <field name='groups' eval='[(4,ref("hotel_management.group_receptionist"))]'/>
+    </record> 
+    <record id="all_record_rule_hotel_amenities" model="ir.rule">
+        <field name="name">All Record Rule</field>
+        <field name="model_id" ref="model_hotel_amenities"/>
+        <field name='groups' eval='[(4,ref("hotel_management.group_admin_hotel"))]'/>
+    </record> 
+
+
+
+    <!-- <record id="receptionist_record_rule_room_book" model="ir.rule">
+        <field name="name"> receptionist Record Rule</field>
+        <field name="model_id" ref="model_room_book"/>
+        <field name='groups' eval='[(4,ref("hotel_management.group_receptionist"))]'/>
+    </record> 
+    <record id="all_record_rule_room_book" model="ir.rule">
+        <field name="name">All Record Rule</field>
+        <field name="model_id" ref="model_room_book"/>
+        <field name='groups' eval='[(4,ref("hotel_management.group_admin_hotel"))]'/>
+    </record>  -->
+
+
+    <record id="receptionist_record_rule_room_history" model="ir.rule">
+        <field name="name"> receptionist Record Rule</field>
+        <field name="model_id" ref="model_room_history"/>
+        <field name='groups' eval='[(4,ref("hotel_management.group_receptionist"))]'/>
+    </record> 
+    <record id="all_record_rule_hotel_room_history" model="ir.rule">
+        <field name="name">All Record Rule</field>
+        <field name="model_id" ref="model_room_history"/>
+        <field name='groups' eval='[(4,ref("hotel_management.group_admin_hotel"))]'/>
+    </record> 
+
+    
+</odoo>

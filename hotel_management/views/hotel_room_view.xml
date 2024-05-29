@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hotel_room_view_tree" model="ir.ui.view">
+            <field name="name">Hotel Room</field>
+            <field name="model">hotel.room</field>
+            <field name="arch" type="xml">
+                <tree string="Room List" >
+                    <field name="name"/>
+                    <field name="room_type_id"/>
+
+
+                </tree>
+            </field>
+        </record> 
+        <record id="hotel_room_view_form" model="ir.ui.view">
+            <field name="name">Hotel Room</field>
+            <field name="model">hotel.room</field>
+            <field name="arch" type="xml">
+                <form string="Room Detail">  
+                    <sheet>
+                        <group>
+                              <field name="name"/>
+                              <!-- <field name="amenities_line"/> -->
+                              <field name="room_type_id" />
+                                <field name='state' invisible='1'/>
+                              <field name="customer_name" invisible="state == 'draft',state == 'check_out'" />
+                              <field name="mobile" invisible="state == 'draft',state == 'check_out'"/>
+                              <field name="room_book_date" invisible="state == 'draft',state == 'check_out'"/>
+                              <field name="room_out_date" invisible="state == 'draft',state == 'check_out'"/>
+                        </group>  
+                          <!-- <notebook>
+                                <page name="Amenities" string="Amenities">
+                                    <field name='amenities_line'>
+                                        <tree>
+                                                <field name="room_type"/>
+                                                <field name="person"/>
+                                                <field name="room_price"/>
+
+
+                                               
+                                        </tree>
+                                    </field>
+                                </page>
+                        </notebook>  -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+              
+
+
+        <record model="ir.actions.act_window" id="hotel_room_action">
+            <field name="name">Hotel Room</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hotel.room</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>  

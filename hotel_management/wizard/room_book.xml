@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="room_book_wizard_form" model="ir.ui.view">
+            <field name="name">Room Book</field>
+            <field name="model">room.book</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name='from_book_date' options="{'datepicker':{'minDate': 'now'}}"/>
+                        <field name='rooms_id'/>
+                        <field name='price'/>
+                        <field name="room_type"/>
+                        <field name='person_name'/>
+                        <field name='mobile'/>
+                        <field name='customer_email' widget='email'/>
+                        <field name='to_book_date' options="{'datepicker':{'minDate': 'now'}}" />
+                        <field name='total_price' />
+
+                    </group>
+                    <footer>
+                        <button string="Confirm" name="book_room_action" type="object" class="oe_highlight" data-hotkey="q"  />
+                        <button string="Cancel" class="btn btn-secondary" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="book_room_wizard_action" model="ir.actions.act_window">
+            <field name="name">Book Room </field>
+            <field name="res_model">room.book</field>
+            <field name="binding_view_types">list,form</field>
+            <field name="binding_model_id" ref="hotel_management.model_hotel_room" />
+            <field name="view_id" ref="room_book_wizard_form"/>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

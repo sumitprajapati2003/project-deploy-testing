@@ -26,6 +26,7 @@ class CarCar(models.Model):
     def in_buy(self):
         for rec in self:
             rec.states="buy"
+    print('change by mehul-----')        
 
 
     def mail_send(self):

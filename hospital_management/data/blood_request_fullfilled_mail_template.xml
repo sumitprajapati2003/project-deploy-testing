@@ -1,0 +1,16 @@
+<odoo>
+    <record id="blood_request_fullfilled_mail_id" model="mail.template">
+        <field name="name">Blood Request Fullfilled</field>
+        <field name="email_from">{{( object.email) }}</field>
+        <field name="email_to">{{( object.email) }}</field>
+        <!-- <field name="model_id" ref="hospital_management.model_blood_request" /> -->
+        <field name="model_id" ref="hospital_management.model_res_partner" />
+        <field name="subject">Congratulations on your blood request fullfilled!</field>
+        <field name="body_html" type="html">
+            <div style="margin: 0px; padding: 0px;">
+            <p t-field="object.name">Dear </p>
+            Congratulations on your blood request fullfilled!
+            </div>
+        </field>
+    </record>
+</odoo>

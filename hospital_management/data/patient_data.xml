@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record id="patient_id_1" model="hm.patient">
+            <field name="patient_name">Rahul Sen</field>
+            <field name="phone">9876543210</field>
+            <field name="email">rahul@yopmail.com</field>
+            <field name="medical_history">No significant medical history</field>
+            <field name="allergies"></field>
+            <field name="insurance_provider">ABC Insurance</field>
+            <field name="insurance_id">654321</field>
+            <field name="next_of_kin_name">Hinvita sen</field>
+            <field name="next_of_kin_relationship">Spouse</field>
+            <field name="next_of_kin_phone_number">0987654321</field>
+            <field name="marital_status">married</field>
+            <field name="patient_age">35</field>
+            <field name="patient_gender">male</field>
+            <field name="patient_address">123 Main St, City</field>
+            <!-- <field name="specialty_ids" ref="hospital_management.dr_specialties_id_endocrinologist" /> -->
+            <field name="specialty_ids" eval="[(6, 0, [ref('hospital_management.dr_specialties_id_endocrinologist')])]"/>
+            <field name="disease_ids" eval="[(6, 0, [ref('hospital_management.patient_disease_id_39')])]"/>
+            <field name="assign_doctor_ids" eval="[(6, 0, [ref('hospital_management.doctor_1')])]"/>
+            <field name="admit_date">2024-05-20</field>
+            <field name="discharge_date">2024-05-25</field>
+            <field name="blood_group">A+</field>
+        </record>
+    </data>
+</odoo>

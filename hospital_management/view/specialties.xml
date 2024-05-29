@@ -1,0 +1,38 @@
+<odoo>
+    <record id="view_dr_specialties_tree" model="ir.ui.view">
+        <field name="name">dr.specialties.tree</field>
+        <field name="model">dr.specialties</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>    
+    </record>
+
+    <record id="view_dr_specialties_form_notebook" model="ir.ui.view">
+        <field name="name">dr.specialties.form</field>
+        <field name="model">dr.specialties</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="dr_specialties_model_action" model="ir.actions.act_window">
+        <field name="name">Dr Specialties</field>
+        <field name="res_model">dr.specialties</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

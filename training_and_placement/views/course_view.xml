@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <!-- form view  -->
+    <record id="view_course_form" model="ir.ui.view">
+    <field name="name">course.course.form</field>
+    <field name="model">course.course</field>
+    <field name="arch" type="xml">
+        <form string="Training Course">
+            <sheet>
+                <!-- <widget name="web_ribbon" title="10% Discount" bg-color="text-bg-danger"/> -->
+                <field name="image" widget="image" class="oe_avatar"/>
+                <group>
+                <group>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="duration"/>
+                    <field name="fees"/>
+                </group>
+                </group>
+
+
+                            
+                <notebook>
+                    <page name="enroll_student" string="Enrolled Student">
+                    <field name="trainee_ids" widget="one2many_list">
+                            <tree>
+                                <field name="name"/>
+                                <field name="email"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page name="student_placed" string="Student Placed">
+                       <field name="placed_ids" widget="one2many_list">
+                            <tree>
+                                <field name="student_id"/>
+                                <field name="company_id"/>
+                                <field name="salary"/>
+                                <field name="job_title"/>
+                            </tree>
+                        </field>
+                    </page>
+                      <page name="Trainer" string="Course Trainer">
+                       <field name="trainer_id" widget="one2many_list">
+                            <tree>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </page>
+    
+            </notebook>
+            </sheet>
+        </form>
+    </field>
+    </record>
+    
+    <!-- tree view  -->
+    <record id="view_course_tree" model="ir.ui.view">
+    <field name="name">course.course.tree</field>
+    <field name="model">course.course</field>
+    <field name="arch" type="xml">
+        <tree string="Training Course">
+            <field name="name"/>
+            <field name="duration"/>
+            <field name="fees"/>
+        </tree>
+    </field>
+    </record>
+
+    <!-- action  -->
+      <record id="action_course" model="ir.actions.act_window">
+            <field name="name">Course</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">course.course</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+    </data>
+</odoo>

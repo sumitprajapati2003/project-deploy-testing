@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_session_session" name="report_session_session">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout">
+                        <h1>Session Report</h1>
+                        <style>
+                            table{
+                                  width:100%;
+                                  border:1px solid black;
+                                  padding:5px;
+                            }
+                            table th{
+                                  border:1px solid black;
+                                  padding:5px;
+                                  color:white;
+                                  background-color:#EDF0F0;
+                                  color:black;
+                            }
+                            table td{
+                                  border:1px solid black;
+                                  text_align:center;
+                                  padding:5px;
+                                  color:black;
+                            }
+                     
+                        </style>
+                            <table>
+                                <thead>
+                                    <th colspan="4">Course Duration</th>
+                                </thead>
+                                <tr>
+                                    <td style="background:#EDF0F0;">Name</td>
+                                    <td style="background:#C9FCA9;">Start Date</td>
+                                    <td style="background:#FAAB94;">End Date</td>
+                                    <td style="background:#EDF0F0;">Trainer</td>
+                                </tr>
+                                <tr>
+                                    <td> <t t-esc="o.course_id.name"/> </td>
+                                    <td> <t t-esc="o.start_date.strftime('%m/%d/%Y')"/> </td>
+                                    <td> <t t-esc="o.end_date.strftime('%d/%m/%Y %H:%M:%S')"/> </td>
+                                    <td> <t t-esc="o.trainer.name"/> </td>
+                                </tr>
+                            </table>
+
+                            <hr/>
+
+                            <br/>
+                            <p>The session will be starting from <b><t t-esc="o.start_date"/></b> and will be taken by <b><t t-esc="o.trainer.name"/></b> , and which will be completed by <b><t t-esc="o.end_date"/></b></p>
+                            <hr/>
+
+                            <h1>Trainer Information</h1>
+                            <table t-if="o.trainer">
+                                <thead>
+                                    <th colspan="2">Trainer Information</th>
+                                </thead>
+                                <tr>
+                                    <td style="background:#EDF0F0;">Name</td>
+                                    <td> <t t-esc="o.trainer.name"/> </td>
+                                </tr>
+                                <tr>
+                                    <td style="background:#EDF0F0;">Email</td>
+                                    <td> <t t-esc="o.trainer.email"/> </td>
+                                </tr>
+                                <tr>
+                                    <td style="background:#EDF0F0;">Mobile</td>
+                                    <td> <t t-esc="o.trainer.mobile"/> </td>
+                                </tr>
+                            </table>
+                            <hr/>
+                            <br/>
+                            <div>
+                                <img t-att-src="'/report/barcode/EAN13/%s'%(o.course_id.name)" width="200" height="60" alt="barcode"/>
+                                <img t-att-src="'/report/barcode/QR/%s'%('https://www.openeducat.com/')" width="60" height="60" alt="barcode"/>
+                                <!-- <img t-att-src="'/report/barcode/EAN8/%s'%(o.course_id.name)" width="80" height="80" alt="barcode"/> -->
+                                <!-- <img t-att-src="'/report/barcode/Code128/%s'%(o.course_id.name)" width="80" height="80" alt="barcode"/> -->
+                                <!-- <img t-att-src="'/report/barcode/UPCA/%s'%(o.course_id.name)" width="80" height="80" alt="barcode"/> -->
+                                <!-- <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR',o.course_id.name,100,100)"/> -->
+                            </div>
+                            <hr/>
+                            <br/>
+                        
+                            <!-- conditional statement -->
+                            <t t-if="o.trainer.name == 'Trainer1'">
+                                <p>Trainer is Trainer1</p>    
+                            </t>
+                            <t t-else="">
+                                <p>Trainer is not Trainer1</p>
+                            </t>
+
+                            <!-- condition datetime  -->
+                            <t t-if="o.start_date &lt; o.today and o.end_date &gt; o.today">
+                                <p>The session is <b> Already Started</b> and taken by <b><t t-esc="o.trainer.name"/></b> , and which will be completed by <b><t t-esc="o.end_date"/></b></p>
+                            </t>
+                            <t t-elif="o.start_date &gt; o.today and o.end_date &gt; o.today">
+                                <p>The session will be starting from <b><t t-esc="o.start_date"/></b> and will be taken by <b><t t-esc="o.trainer.name"/></b> , and which will be completed by <b><t t-esc="o.end_date"/></b></p>
+                            </t>
+                            <t t-else="">
+                                <p>The session is<b> Already Started</b> and taught by <b><t t-esc="o.trainer.name"/></b> , and this session is <b>Completed</b></p>
+                            </t>                                                                       
+
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

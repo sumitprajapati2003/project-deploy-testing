@@ -1,0 +1,1 @@
+from . import authority , company , course , placement , session ,trainee , res_partner , applications 

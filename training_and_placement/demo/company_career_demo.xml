@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="career001" model="company.career">
+                <field name="position">Intern</field>
+                <field name="vacancy">4</field>
+        </record>
+        <record id="career002" model="company.career">
+                <field name="position">SDE</field>
+                <field name="vacancy">7</field>
+        </record>
+        <record id="career003" model="company.career">
+                <field name="position">QA</field>
+                <field name="vacancy">3</field>
+        </record>
+        <record id="career004" model="company.career">
+                <field name="position">Backend Dev</field>
+                <field name="vacancy">6</field>
+        </record>
+    </data>
+</odoo>

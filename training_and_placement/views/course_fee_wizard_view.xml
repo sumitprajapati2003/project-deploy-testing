@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- form view  -->
+    <record id="view_course_fee_wizard_form" model="ir.ui.view">
+    <field name="name">course.fee.wizard.form</field>
+    <field name="model">course.fee.wizard</field>
+    <field name="arch" type="xml">
+        <form string="Course Fee Wizard">
+            <sheet>
+                <group>
+                    <field name="fees"/>
+                </group>
+                <footer>
+                    <button name="change_fee" string="Change Fee" type="object" class="oe_highlight"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </sheet>
+        </form>
+    </field>
+    </record>
+
+    <record id="action_course_fee_wizard_window" model="ir.actions.act_window">
+        <field name="name">Change Course fee</field>
+        <field name="res_model">course.fee.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_course_fee_wizard_form"/>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="training_and_placement.model_course_course" />
+        <field name="binding_view_types">list,form</field>
+    </record>
+</odoo>

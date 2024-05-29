@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+     <!-- form view  -->
+        <record id="view_company_form" model="ir.ui.view">
+        <field name="name">company.company.form</field>
+        <field name="model">company.company</field>
+        <field name="arch" type="xml">
+            <form string="Company">
+                <sheet>
+                    <field name="image" widget="image" class="oe_avatar"/>
+                        <field name="title" style="font-size: 40px;"/>
+
+                        <group>
+                        <field name="name"/>
+                        <field name="detail"/>
+                        <field name="phone"/>
+                        <field name="email"/>
+                        <field name="address"/>
+                        <field name="contact_person"/>
+                        <field name="website" widget="url"/>
+                    </group>
+            </sheet>
+            <sheet>
+            <!-- career view  -->
+                <group>
+                    <field name="career_ids" widget="one2many_list">
+                        <tree string="Career">
+                            <field name="position"/>
+                            <field name="job_detail"/>
+                            <field name="skill"/>
+                            <field name="vacancy"/>
+                        </tree>
+                    </field>
+                </group>
+            </sheet>
+
+            </form>
+        </field>
+        </record>
+
+    <!-- tree view  -->
+        <record id="view_company_tree" model="ir.ui.view">
+        <field name="name">company.company.tree</field>
+        <field name="model">company.company</field>
+        <field name="arch" type="xml">
+            <tree string="Company">
+                <field name="name"/>
+                <field name="address"/>
+                <field name="contact_person"/>
+                <field name="website"/>
+            </tree>
+        </field>
+        </record>
+
+    <!-- action   -->
+      <record id="action_company" model="ir.actions.act_window">
+            <field name="name">Company</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">company.company</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+    <!-- career action  -->
+    <record id="company_career_action" model="ir.actions.act_window">
+    <field name="name">Company Career</field>
+    <field name="res_model">company.company</field>
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="view_company_form"/>
+    <field name="context">{}</field>
+    <field name="help" type="html">
+        <p class="o_view_nocontent_create">
+            Create a new company career
+        </p>
+    </field>
+    </record>
+
+    </data>
+</odoo>

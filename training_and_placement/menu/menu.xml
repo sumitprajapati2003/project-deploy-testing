@@ -1,0 +1,67 @@
+<odoo>
+        <menuitem
+        id = "training_and_placement_root"
+        name="Training and Placement"
+        />
+
+        <!-- authority  -->
+          <menuitem
+        id = "menu_authority_management"
+        name="Authority"
+        action="action_authority"
+        parent="training_and_placement_root"   
+        />
+
+        <!-- company  -->
+                <menuitem
+        id = "menu_company_management"
+        name="Company"
+        action="action_company"
+        parent="training_and_placement_root"   
+        />
+
+        <!-- course  -->
+                <menuitem
+        id = "menu_course_management"
+        name="Course"
+        action="action_course"
+        parent="training_and_placement_root"   
+        />
+
+        <!-- placement  -->
+                <menuitem
+        id = "menu_placement_management"
+        name="Placement"
+        action="action_placement"
+        parent="training_and_placement_root"   
+        />
+
+        <!-- session  -->
+                <menuitem
+        id = "menu_session_management"
+        name="Session"
+        action="action_session"
+        parent="training_and_placement_root"   
+        />
+
+        <!-- trainee  -->
+                <menuitem
+        id = "menu_trainee_management"
+        name="Trainee"
+        action="action_trainee"
+        parent="training_and_placement_root"   
+        />
+
+
+        <!-- applications  -->
+                <menuitem
+        id = "menu_applications_management"
+        name="Applications"
+        action="action_applications"
+        parent="training_and_placement_root"   
+        />
+        
+        
+
+</odoo>
+ 

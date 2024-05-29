@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="action_report_applications" model="ir.actions.report">
+            <field name="name">Applications Report</field>
+            <field name="model">applications.applications</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">training_and_placement.report_applications_applications</field>
+            <field name="report_file">training_and_placement.report_applications_applications</field>
+            <field name="binding_model_id" ref="model_applications_applications"/>
+            <field name="binding_type">report</field>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,31 @@
+<odoo>
+        <record id="view_multi_step_wizard_form" model="ir.ui.view">
+            <field name="name">multi.step.wizard.form</field>
+            <field name="model">multi.step.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Multi Step Wizard">
+                    <sheet>
+                        <group>
+                            <field name="step1"/>
+                            <field name="step2"/>
+                            <field name="step3"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="action_next_step" string="Next" type="object" class="oe_highlight"/>
+                        <button name="action_previous_step" string="Previous" type="object" class="oe_highlight"/>
+                        <button string="Cancel" special="cancel" type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_multi_step_wizard_window" model="ir.actions.act_window">
+        <field name="name">Multi Step WIzard</field>
+        <field name="res_model">multi.step.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_multi_step_wizard_form"/>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="training_and_placement.model_applications_applications" />
+        <field name="binding_view_types">form</field>
+    </record> 
+</odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <!-- form view  -->
+        <record id="view_authority_form" model="ir.ui.view">
+        <field name="name">authority.authority.form</field>
+        <field name="model">authority.authority</field>
+        <field name="arch" type="xml">
+        <form string="Authority">
+            <sheet>
+                <field name="image" widget="image" class="oe_avatar"/>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="position"/>
+                    </group>
+                </group>
+           </sheet>
+        </form>
+        </field>
+        </record>
+
+    <!-- tree view  -->
+        <record id="view_authority_tree" model="ir.ui.view">
+        <field name="name">authority.authority.tree</field>
+        <field name="model">authority.authority</field>
+        <field name="arch" type="xml">
+            <tree string="Authority">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="position"/>
+            </tree>
+        </field>
+        </record>
+
+    <!-- action  -->
+        <record id="action_authority" model="ir.actions.act_window">
+            <field name="name">Authority</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">authority.authority</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_applications_applications" name="report_applications_applications">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="page">
+                            <h1>Application Report</h1>
+                            <br/>
+                            <b><h1 t-esc="o.applications_id"/></b>
+                            <br/>
+                            <hr/>
+                            <b>Company:</b>
+                            <span t-esc="o.company_id.name"/>
+                            <br/>
+                            <b>Student:</b>
+                            <span t-esc="o.student_id.name"/>
+                            <br/>
+                             <b>Job Title:</b>
+                            <span t-esc="o.position_id.position"/>
+                            <br/>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

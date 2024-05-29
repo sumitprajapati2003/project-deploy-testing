@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- tree View -->
+        <record id="car_enquire_view_tree" model="ir.ui.view">
+            <field name="name">sell/buy</field>
+            <field name="model">car.enquire</field>
+            <field name="arch" type="xml">
+                <tree string="sell Buy">
+                    <field name="partner_id"/>
+                    <field name="fleet_id"/>
+                    <field name="category"/>
+                    <field name="model_year"/>
+                    <field name="states" />
+                </tree>    
+            </field>
+        </record>
+        <!-- form view -->
+        <record id="car_enquire_view_form" model="ir.ui.view">
+            <field name="name">sell/buy</field>
+            <field name="model">car.enquire</field>
+            <field name="arch" type="xml">
+                <form string="sell buy">
+                    <header>
+                        <!-- <button name="search_records" type="object" string="Check Orm" class="oe_highlight"/> -->
+                        <button name="in_sell" invisible="states == 'reject'" type="object" string="sell" class="oe_highlight"/>
+                        <button name="in_buy" type="object" string="Buy" invisible="states == 'reject'" class="oe_highlight"/>
+                        <!-- <button name="in_confirm" type="object" string="confirm" invisible="states not in ['sell','buy']" class="oe_highlight"/> -->
+                        
+                        <field name="states" widget="statusbar" statusbar_visible="sell,buy,reject," class="oe_highlight" />
+                    </header>
+                   
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="partner_id"/>
+                                <field name="fleet_id"/>
+                                <field name="category"/>
+                                <field name="car_image" widget="image" />
+                            </group>
+                            <group>
+                                <field name="model_year"/>
+                                <field name="car_price"/>
+                            </group>
+                        </group> 
+                    </sheet>
+                </form>    
+            </field>
+        </record>
+        <record id="car_enquire_kanban_view" model="ir.ui.view">
+            <field name="name">enquire</field>
+            <field name="model">car.enquire</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_mobile">
+                    <field name="fleet_id"/>
+                    <field name="partner_id"/>
+                    <field name="category"/>
+                    <field name="fuel_type"/>
+                    <field name="model_year"/>
+                    <field name="data_true"/>
+                    <field name="states"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <strong>Seller/Buyer : </strong><field name="partner_id"/><br/>
+                                        <strong>Car Model : </strong><field name="fleet_id"/><br/>
+                                        <strong>Category :</strong><field name="category"/><br/>
+                                        <strong>Fuel Type :</strong><field name="fuel_type"/><br/>
+                                        <strong>Model Year :</strong><field name="model_year"/><br/>
+                                        <strong>Car Price :</strong><field name="car_price"/><br/>
+                                        <strong>Customer Price :</strong><field name="customer_price"/><br/>
+                                        <strong>Data verify :</strong><field name="data_true"/><br/>
+                                        <!-- <h4><field name="car" widget="image"/></h4> -->
+                                        <strong >Sell/Buy: </strong><t t-out="record.states.value"/><br /><br />
+                                        <button name="confirm_order" type="object" class="oe_highlight m-2" invisible="states=='reject'" >confirm</button>
+                                        <button name="cancel_order" type="object" class="oe_highlight" invisible="states=='reject'" >Reject</button>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record> 
+
+        <!-- action -->
+        <record id="car_enquire_action" model="ir.actions.act_window">
+            <field name="name">enquire</field>
+            <field name="res_model">car.enquire</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+
+
+    </data>
+</odoo>        

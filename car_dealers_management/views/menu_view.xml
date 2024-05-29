@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="main_menu" name="Car Dealers" sequence="1"/>
+        <menuitem id="sell_buy_menu" name="Sell/Buy" sequence="2" parent="main_menu" action="sell_buy_action"/>
+        <menuitem id="enquire_menu" name="Enquire" sequence="3" parent="main_menu" action="car_enquire_action"/>
+    </data>
+</odoo>

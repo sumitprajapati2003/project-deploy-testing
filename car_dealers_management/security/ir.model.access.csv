@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+car_dealers_management.access_sell_buy,access_sell_buy,car_dealers_management.model_sell_buy,base.group_user,1,1,1,1
+car_dealers_management.access_car_enquire,access_car_enquire,car_dealers_management.model_car_enquire,base.group_user,1,1,1,1
+car_dealers_management.access_car_enquire_wizard,access_car_enquire_wizard,car_dealers_management.model_car_enquire_wizard,base.group_user,1,1,1,1

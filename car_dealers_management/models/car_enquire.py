@@ -39,4 +39,7 @@ class CarEnquire(models.Model):
         print('before cancel_order------------------',self.states) 
         self.states="reject"
         print('after cancel_order------------------',self.states) 
+
+    def fun(self):
+        pass    
      

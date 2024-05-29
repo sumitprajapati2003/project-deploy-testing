@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="action_report_session" model="ir.actions.report">
+            <field name="name">Session Report</field>
+            <field name="model">session.session</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">training_and_placement.report_session_session</field>
+            <field name="report_file">training_and_placement.report_session_session</field>
+            <field name="binding_model_id" ref="model_session_session"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>
+
+
+

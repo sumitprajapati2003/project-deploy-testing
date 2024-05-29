@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_placement_placement" name="report_placement_placement">
+            <t t-call="web.html_container">
+                <t t-call="web.internal_layout">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="page">
+                            <h1>Placement Report</h1>
+                            <b>Company:</b>
+                            <span t-esc="o.company_id.name"/>
+                            <br/>
+                            <b>Student:</b>
+                            <span t-esc="o.student_id.name"/>
+                            <br/>
+                             <b>Job Title:</b>
+                            <span t-esc="o.job_title.position"/>
+                            <br/>
+                            <b>Course Done:</b>
+                            <span t-esc="o.course_id.name"/>
+                            <br/>
+                            <b>Salary:</b>
+                            <span t-esc="o.salary"/>
+                            <br/>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

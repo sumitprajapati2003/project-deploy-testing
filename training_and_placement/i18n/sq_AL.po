@@ -1,0 +1,860 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version:Odoo Server 17.0"
+"Report-Msgid-Bugs-To:"
+"POT-Creation-Date:2024-05-10 08:41+0000"
+"PO-Revision-Date:2024-05-10 08:41+0000"
+"Last-Translator:"
+"Language-Team:"
+"MIME-Version:1.0"
+"Content-Type:text/plain; charset=UTF-8"
+"Content-Transfer-Encoding:"
+"Plural-Forms:"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid ", and this session is <b>Completed</b>"
+msgstr ", dhe ky sesion është <b>Përfunduar</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid ", and which will be completed by"
+msgstr ", dhe e cila do të plotësohet nga"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid "<b>Company:</b>"
+msgstr "<b>Kompania:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                             <b>Job Title:</b>"
+msgstr ""
+"<br/>\n"
+" <b>Titulli i punës:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Course Done:</b>"
+msgstr ""
+"<br/>\n"
+" <b>Kursi u krye:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Salary:</b>"
+msgstr ""
+"<br/>\n"
+" <b>Paga:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Student:</b>"
+msgstr ""
+"<br/>\n"
+" <b>Studenti:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.sale_report_inherit
+msgid "<strong>report customization</strong>"
+msgstr "<strong>përshtatjen e raportit</strong>"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_needaction
+msgid "Action Needed"
+msgstr "Veprimi i Nevojshëm"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_ids
+msgid "Activities"
+msgstr "Aktivitetet"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekorimi me përjashtim të aktivitetit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_state
+msgid "Activity State"
+msgstr "Gjendja e aktivitetit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikona e llojit të aktivitetit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__address
+msgid "Address"
+msgstr "Adresë"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+msgid "Application Report"
+msgstr "Raporti i Aplikimit"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_applications
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__applications_id
+#: model:ir.ui.menu,name:training_and_placement.menu_applications_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_applications_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_applications_tree
+msgid "Applications"
+msgstr "Aplikacionet"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_applications
+msgid "Applications Report"
+msgstr "Raporti i Aplikimeve"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_attachment_count
+msgid "Attachment Count"
+msgstr "Numri i bashkëngjitjeve"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_authority
+#: model:ir.model,name:training_and_placement.model_authority_authority
+#: model:ir.ui.menu,name:training_and_placement.menu_authority_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_authority_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_authority_tree
+msgid "Authority"
+msgstr "Autoriteti"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "Cancel"
+msgstr "Anulo"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_company_career
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__career_ids
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_form
+msgid "Career"
+msgstr "Karriera"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_course_fee_wizard_window
+msgid "Change Course fee"
+msgstr "Ndryshimi i tarifës së kursit"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+msgid "Change Fee"
+msgstr "Tarifa e ndryshimit"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_company
+#: model:ir.model,name:training_and_placement.model_company_company
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__company_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__company_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__company_id
+#: model:ir.ui.menu,name:training_and_placement.menu_company_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_tree
+msgid "Company"
+msgstr "Kompania"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__company_id
+msgid "Company "
+msgstr "Kompania"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.company_career_action
+msgid "Company Career"
+msgstr "Karriera e Kompanisë"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_company_company
+msgid "Company Report"
+msgstr "Raporti i Kompanisë"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_res_partner
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__contact_person
+msgid "Contact"
+msgstr "Kontaktoni"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_course
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_res_partner__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_res_users__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__course_id
+#: model:ir.ui.menu,name:training_and_placement.menu_course_management
+msgid "Course"
+msgstr "Kursi"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Course Duration"
+msgstr "Kohëzgjatja e kursit"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+msgid "Course Fee Wizard"
+msgstr "Magjistari i tarifave të kursit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__started
+msgid "Course Started"
+msgstr "Kursi filloi"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Course Trainer"
+msgstr "Trajner kursi"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_placement_wizard_window
+msgid "Create Placement"
+msgstr "Krijo vendosje"
+
+#. module: training_and_placement
+#: model_terms:ir.actions.act_window,help:training_and_placement.company_career_action
+msgid "Create a new company career"
+msgstr "Krijoni një karrierë të re kompanie"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_session_report_wizard_window
+msgid "Create report"
+msgstr "Krijo raport"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__create_uid
+msgid "Created by"
+msgstr "Krijuar nga"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__create_date
+msgid "Created on"
+msgstr "Krijuar më"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__description
+msgid "Description"
+msgstr "Përshkrim"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__detail
+msgid "Detail"
+msgstr "Detaj"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__display_name
+msgid "Display Name"
+msgstr "Emri i shfaqur"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__duration
+msgid "Duration (in hours)"
+msgstr "Kohëzgjatja (në orë)"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__email
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__email
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__email
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__email
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Email"
+msgstr "Email"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__end_date
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "End Date"
+msgstr "Data e përfundimit"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Enrolled Student"
+msgstr "Student i regjistruar"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__fees
+msgid "Fee"
+msgstr "Tarifa"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__fees
+msgid "Fees"
+msgstr "Tarifat"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_follower_ids
+msgid "Followers"
+msgstr "Ndjekësit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Ndjekësit (Partnerët)"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ikona e mrekullueshme e shkronjave p.sh. fa-detyrat"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__from_date
+msgid "From Date"
+msgstr "Nga data"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__has_message
+msgid "Has Message"
+msgstr "Ka Mesazh"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__id
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__id
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__id
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__id
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__id
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__id
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__id
+msgid "ID"
+msgstr "ID"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_exception_icon
+msgid "Icon"
+msgstr "Ikona"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikona për të treguar një aktivitet përjashtimi."
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nëse zgjidhet, mesazhet e reja kërkojnë vëmendjen tuaj."
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_error
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nëse zgjidhet, disa mesazhe kanë një gabim dërgimi."
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__image
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__image
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__image
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__image
+msgid "Image"
+msgstr "Imazhi"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_is_follower
+msgid "Is Follower"
+msgstr "Është ndjekës"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__job_detail
+msgid "Job Detail"
+msgstr "Detajet e punës"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__job_title
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__job_title
+msgid "Job Title"
+msgstr "Titulli i Punës"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__write_uid
+msgid "Last Updated by"
+msgstr "Përditësuar së fundi nga"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__write_date
+msgid "Last Updated on"
+msgstr "Përditësimi i fundit më"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_error
+msgid "Message Delivery error"
+msgstr "Gabim në dërgimin e mesazhit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_ids
+msgid "Messages"
+msgstr "Mesazhet"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Mobile"
+msgstr "Celular"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_multi_step_wizard_window
+msgid "Multi Step WIzard"
+msgstr "Magjistar me shumë hapa"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_multi_step_wizard
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Multi Step Wizard"
+msgstr "Magjistar me shumë hapa"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Afati i Aktivitetit tim"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__name
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__name
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Name"
+msgstr "Emri"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Next"
+msgstr "Tjetra"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Afati i ardhshëm i Aktivitetit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_summary
+msgid "Next Activity Summary"
+msgstr "Përmbledhja e aktivitetit të ardhshëm"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_type_id
+msgid "Next Activity Type"
+msgstr "Lloji i aktivitetit të ardhshëm"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numri i Veprimeve"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numri i gabimeve"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Numri i mesazheve që kërkojnë veprim"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numri i mesazheve me gabim në dorëzim"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__pending
+msgid "Pending"
+msgstr "Në pritje"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__phone
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__phone
+msgid "Phone"
+msgstr "Telefoni"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_placement
+#: model:ir.model,name:training_and_placement.model_placement_placement
+#: model:ir.ui.menu,name:training_and_placement.menu_placement_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_tree
+msgid "Placement"
+msgstr "Vendosja"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid "Placement Report"
+msgstr "Raporti i vendosjes"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__position_id
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__position
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__position
+msgid "Position"
+msgstr "Pozicioni"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Previous"
+msgstr "E mëparshme"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__rejected
+msgid "Rejected"
+msgstr "Refuzuar"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__skill
+msgid "Req. Skill"
+msgstr "Req. Shkathtësi"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_user_id
+msgid "Responsible User"
+msgstr "Përdorues i Përgjegjshëm"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Gabim në dërgimin e SMS"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__salary
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__salary
+msgid "Salary"
+msgstr "Paga"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__selected
+msgid "Selected"
+msgstr "Zgjedhur"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_session
+#: model:ir.ui.menu,name:training_and_placement.menu_session_management
+msgid "Session"
+msgstr "Sesioni"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_session
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Session Report"
+msgstr "Raporti i seancës"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__session_list_ids
+msgid "Sessions"
+msgstr "Sesionet"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__start_date
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Start Date"
+msgstr "Data e fillimit"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.action_state_as_rejected
+msgid "State as rejected"
+msgstr "Shteti si i refuzuar"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__state
+msgid "Status"
+msgstr "Statusi"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Statusi i bazuar në aktivitetet\n"
+"E vonuar: Afati ka kaluar tashmë\n"
+"Sot: Data e aktivitetit është sot\n"
+"Planifikuar: Aktivitetet e ardhshme."
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step1
+msgid "Step 1"
+msgstr "Hapi 1"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step2
+msgid "Step 2"
+msgstr "Hapi 2"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step3
+msgid "Step 3"
+msgstr "Hapi 3"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_trainee_trainee
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__student_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__student_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__student_id
+msgid "Student"
+msgstr "Studenti"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Student Placed"
+msgstr "Studenti i vendosur"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session is <b> Already Started</b> and taken by"
+msgstr "Sesioni është <b> Filluar tashmë</b> dhe është kryer nga"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session is<b> Already Started</b> and taught by"
+msgstr "Sesioni është<b> Filluar tashmë</b> dhe mësohet nga"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session will be starting from"
+msgstr "Seanca do të nisë nga"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__title
+msgid "Title"
+msgstr "Titulli"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__to_date
+msgid "To Date"
+msgstr "Deri më sot"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__today
+msgid "Today"
+msgstr "Sot"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_trainee
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__trainee_ids
+#: model:ir.ui.menu,name:training_and_placement.menu_trainee_management
+msgid "Trainee"
+msgstr "Praktikant"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__trainer_id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__trainer
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer"
+msgstr "Trajner"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer Information"
+msgstr "Informacioni i trajnerit"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer is Trainer1"
+msgstr "Trajneri është Trainer1"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer is not Trainer1"
+msgstr "Trajneri nuk është Trajner1"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_course_course
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_tree
+msgid "Training Course"
+msgstr "Kurs trajnimi"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_session_session
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_tree
+msgid "Training Session"
+msgstr "Sesion Trajnimi"
+
+#. module: training_and_placement
+#: model:ir.ui.menu,name:training_and_placement.training_and_placement_root
+msgid "Training and Placement"
+msgstr "Trajnimi dhe vendosja"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Lloji i aktivitetit të përjashtimit në regjistrim."
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__vacancy
+msgid "Vacancy"
+msgstr "Vend i lirë pune"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__website
+msgid "Website"
+msgstr "Faqja e internetit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__website_message_ids
+msgid "Website Messages"
+msgstr "Mesazhet e faqes në internet"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__website_message_ids
+msgid "Website communication history"
+msgstr "Historia e komunikimit të faqes në internet"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "and will be taken by"
+msgstr "dhe do të merret nga"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_applications_applications
+msgid "applications"
+msgstr "aplikacionet"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "barcode"
+msgstr "barkodi"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.check_session_start_date_cron_ir_actions_server
+msgid "check session start date"
+msgstr "kontrolloni datën e fillimit të seancës"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_company
+msgid "company Report"
+msgstr "raporti i kompanisë"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_course_fee_wizard
+msgid "course fee wizard"
+msgstr "magjistari i tarifave të kursit"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+msgid "create placement"
+msgstr "krijoni vendosje"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "create report"
+msgstr "krijoni raport"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__phone
+msgid "phone"
+msgstr "telefonit"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__placed_ids
+msgid "placed"
+msgstr "vendosur"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_placement_wizard
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+msgid "placement wizard"
+msgstr "magjistari i vendosjes"
+
+#. module: training_and_placement
+#: model:course.course,description:training_and_placement.course01
+msgid "python info"
+msgstr "informacione për python"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.ir_cron_attendance_sheet_daily_if_session_ir_actions_server
+msgid "session cron"
+msgstr "sesion cron"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_session_report_wizard
+msgid "session report wizard"
+msgstr "magjistari i raportit të sesionit"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "session wizard"
+msgstr "magjistari i sesionit"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_trainee_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_trainee_tree
+msgid "trainee"
+msgstr "praktikant"
+

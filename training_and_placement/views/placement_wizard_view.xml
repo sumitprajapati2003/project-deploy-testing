@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- form view  -->
+    <record id="view_placement_wizard_form" model="ir.ui.view">
+    <field name="name">placement.wizard.form</field>
+    <field name="model">placement.wizard</field>
+    <field name="arch" type="xml">
+        <form string="placement wizard">
+            <sheet>
+                <group>
+                    <field name="company_id"/>
+                    <field name="student_id"/>
+                    <field name="course_id"/>
+                    <field name="job_title"/>
+                    <field name="salary"/>
+                </group>
+                <footer>
+                    <button name="create_placement" string="create placement" type="object" class="oe_highlight"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </sheet>
+        </form>
+    </field>
+    </record>
+
+    <record id="action_placement_wizard_window" model="ir.actions.act_window">
+        <field name="name">Create Placement</field>
+        <field name="res_model">placement.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_placement_wizard_form"/>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="training_and_placement.model_applications_applications" />
+        <field name="binding_view_types">form</field>
+    </record>
+</odoo>

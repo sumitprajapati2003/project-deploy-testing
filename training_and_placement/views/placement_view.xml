@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <!-- form view  -->
+    <record id="view_placement_form" model="ir.ui.view">
+    <field name="name">placement.placement.form</field>
+    <field name="model">placement.placement</field>
+    <field name="arch" type="xml">
+        <form string="Placement">
+            <sheet>
+                <group>
+                    <field name="student_id"/>
+                    <field name="company_id"/>
+                    <field name="course_id"/>
+                    <field name="job_title"/>
+                    <field name="salary"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+    </record>
+
+    <!-- tree view  -->
+    <record id="view_placement_tree" model="ir.ui.view">
+    <field name="name">placement.placement.tree</field>
+    <field name="model">placement.placement</field>
+    <field name="arch" type="xml">
+        <tree string="Placement">
+            <field name="company_id"/>
+            <field name="student_id"/>
+            <field name="job_title"/>
+            <field name="salary"/>
+        </tree>
+    </field>
+    </record>
+
+    <!-- action  -->
+      <record id="action_placement" model="ir.actions.act_window">
+            <field name="name">Placement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">placement.placement</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+
+    </data>
+</odoo>

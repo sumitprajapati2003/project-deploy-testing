@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <!-- from view  -->
+    <record id="view_session_form" model="ir.ui.view">
+    <field name="name">session.session.form</field>
+    <field name="model">session.session</field>
+    <field name="arch" type="xml">
+        <form string="Training Session">
+            <sheet>
+                <group>
+                    <field name="course_id"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="started" widget="boolean_toggle"/>
+                    <field name="trainer"/>
+                    <field name="today" invisible="1"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+    </record>
+
+    <!-- tree view  -->
+    <record id="view_session_tree" model="ir.ui.view">
+    <field name="name">session.session.tree</field>
+    <field name="model">session.session</field>
+    <field name="arch" type="xml">
+        <tree string="Training Session" decoration-danger="(started)">
+            <field name="course_id"/>
+            <field name="start_date"/>
+            <field name="started"/>
+            <field name="end_date"/>
+            <field name="trainer"/>
+        </tree>
+    </field>
+    </record>
+
+    <!-- automated action  -->
+    <record id="check_session_start_date_cron" model="ir.cron">
+        <field name="name">check session start date</field>
+        <field name="model_id" ref="model_session_session"/>
+        <field name="state">code</field>
+        <field name="code">model.check_session_start_date()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall"> -1</field>
+        <field name="active">True</field>
+
+    </record>
+
+
+    <!-- action  -->
+      <record id="action_session" model="ir.actions.act_window">
+            <field name="name">Session</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">session.session</field>
+            <field name="view_mode">tree,form</field>
+
+        </record>
+    </data>
+</odoo>

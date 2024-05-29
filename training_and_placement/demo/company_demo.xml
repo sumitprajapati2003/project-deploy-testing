@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="company001" model="company.company">
+                <field name="name">company1</field>
+                <field name="email">company1@gmail.com</field>
+        </record>
+        <record id="company002" model="company.company">
+                <field name="name">company2</field>
+                <field name="email">company3@gmail.com</field>
+        </record>
+        <record id="company003" model="company.company">
+                <field name="name">company3</field>
+                <field name="email">company3@gmail.com</field>
+        </record>
+        <record id="company004" model="company.company">
+                <field name="name">company4</field>
+                <field name="email">company4@gmail.com</field>
+        </record>
+    </data>
+</odoo>

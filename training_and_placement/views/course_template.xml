@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- course template  -->
+    <template id="course_template" name="Courses">
+        <t t-call="website.layout">
+            <style>
+                h3{
+                    background-color:#4C7A93;
+                    border-radius:10px;
+                    color:white;
+                    text-transform: uppercase;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5);
+
+
+                }
+            </style>
+            <div class="oe_structure">
+                <div class="container"><br />
+                    <center>
+                        <h3>Courses</h3>
+                    </center><br />
+                    <table class="table-striped table" border="5px">
+                        <thead style="font-size: 23px;">
+                            <tr>
+                                <h6><b>
+                                        <th>Course</th>
+                                        <th>Duration</th>
+                                        <th>Fees</th>
+                                    </b></h6>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="records" t-as="o">
+                                <tr>
+                                    <td>
+                                        <a t-attf-href="/course/{{ o.id }}">
+                                            <t t-esc="o.name" />
+                                        </a>
+                                    </td>
+                                    <td><t t-esc="o.duration" /></td>
+                                    <td><t t-esc="o.fees" /></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </t>
+    </template>
+
+
+<!-- course detail template  -->
+     <template id="course_detail_template" name="Course Details">
+        <t t-call="website.layout">
+            <style>
+                h3{
+                    background-color:#4f4770;
+                    border-radius:10px;
+                    color:white;
+                    text-transform: uppercase;
+                    text-shadow: 2px 2px 4px rgb(1 1 18 / 93%), -2px -2px 4px #543e6499;
+
+                }
+                 h6{
+                    background-color:#812445;
+                    border-radius:10px;
+                    color:white;
+                    text-align:center;
+                    text-transform: uppercase;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5);
+
+                }
+            
+            </style>
+
+            <div class="oe_structure">
+                <div class="container"><br/>
+                    <center>
+                        <h3><t t-esc="course_id.name"/></h3>
+                    </center><br/>
+                        <section class="pt64 course_top_detail">        
+                            <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-8 learndash_course_border">
+                                <div class="row p-0 mt0">
+                                    
+                                    <div class="col-md-4 col-lg-4 course-teacher media pb-lg-0 pb-md-0 mb16">
+                                        <span class="faculty-img hidden-sm pr-2">
+                                                <img t-if="course_id.image"
+                                                 t-att-src="image_data_uri(course_id.image)"
+                                                 height="200" width="200" style=""
+                                                 class="img img-fluid"/>
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <div class="col"
+                                         style="font-size: 0.875rem;">
+                                        <h6><b>Description :</b></h6>
+                                        <br/>
+                                            <p id="course_description" t-esc="course_id.description" class="mb0 text-secondary"
+                                               style="display: inline-block; font-weight: bold;"/>
+                                    </div>
+
+
+                                    <hr/>
+                                    <div class="col-md-4 col-lg-4 col-6 nbt-category-name pt8 pl-lg-4 pl-md-4 mb16"
+                                         style="font-size: 0.875rem;">
+                                        <h6><b>Duration :</b></h6>
+                                        <br/>
+                                            <p id="course_duration" t-raw="course_id.duration" class="mb0 text-secondary"
+                                               style="display: inline-block; font-weight: bold;"/>
+                                    </div>
+
+
+                                    <div class="col-md-4 col-lg-4 col-6 nbt-category-name pt8 pl-lg-4 pl-md-4 mb16"
+                                         style="font-size: 0.875rem;">
+                                        <h6><b>Trainer :</b></h6>
+                                        <br/>
+                                        <span style="font-weight: bold;" class="text-secondary">
+                                            <span t-esc="course_id.trainer_id.name" class="w-50 text-end"/>
+                                        </span>
+                                    </div>
+                                    
+                                    <div class="col-md-4 col-lg-4 col-6 nbt-category-name pt8 pl-lg-4 pl-md-4 mb16"
+                                         style="font-size: 0.875rem;">
+                                        <h6><b>Fees :</b></h6>
+                                        <br/>
+                                            <p id="course_fee" t-esc="course_id.fees" class="mb0 text-secondary"
+                                               style="display: inline-block; font-weight: bold;"/>
+                                    </div>
+                                    <hr/>
+                                     <div class="d-grid gap-2">
+                                        <a t-attf-href="/course/register">
+                                        <button class="btn btn-primary" type="button">Register this Course</button>
+                                        </a>
+                                      
+
+
+                                        <br/>
+                                        <hr/>
+                                    </div>
+                                    <br/>
+
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </section>
+
+                </div>
+            </div>
+        </t>
+    </template>
+
+
+<!-- register template  -->
+
+    <template id="register_template" name="register">
+        <t t-call="website.layout">
+        <style>
+            .card{
+                margin-top:5px;
+                margin-bottom:60px;
+                margin-right:200px;
+                margin-left:200px;
+                box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5), -10px -10px 5px rgba(255, 255, 255, 0.5);
+
+            }        
+            h3{
+                margin-top:20px;
+                background-color:#4C7A93;
+                border-radius:10px;
+                color:white;
+                text-transform: uppercase;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5);
+                }
+
+        </style>
+        <div class="container">
+            <center>
+                <h3>Registeration</h3>
+            </center><br/>
+
+            <div class="card">
+                <div class="card-body">
+
+                    <form action="/course/register/thankyou" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                     <input type="hidden" name="course" id="course" t-att-value="course_id"/>
+
+                        
+                        <div class="mb-3">
+                          <label for="Name" class="form-label">Name :</label>
+                          <input type="name" class="form-control" id="name" name="name"/>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="phone" class="form-label">Phone :</label>      
+                          <input type="text" class="form-control" id="phone" name="phone"/>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address :</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email"/>
+                        </div>
+
+                        <div>
+                            <label for="file" class="form-label">Resume :</label>
+                            <input class="form-control form-control-lg" id="file" type="file" name="file"/>
+                            <hr/>
+                        </div>
+
+                         <div>
+                            <label for="course" class="form-label">Course :</label>
+                              <select class="form-select" id="course" name="o">
+                                   <t t-foreach="courses" t-as="o">
+                                        <option t-att-value="o">
+                                                <t t-esc="o.name"/> 
+                                          </option>
+                                        </t>
+                                </select>  
+                            <hr/>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button><br/><hr/>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </t>
+    </template>
+
+
+<!-- thank you template  -->
+    <template id="thankyou_template" name="thank">
+        <t t-call="website.layout">
+          <div class="vh-100 d-flex justify-content-center align-items-center">
+            <div class="col-md-4">
+                <div class="border border-3 border-success"></div>
+                    <div class="card  bg-white shadow p-5">
+                        <div class="text-center">
+                            <h1>Thank You !</h1>
+                            <strong>Please check your email</strong> for further instructions for course.<br/><hr/>
+                            <a href="/course">
+                                <button class="btn btn-outline-success">Back to Courses</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+
+</odoo>

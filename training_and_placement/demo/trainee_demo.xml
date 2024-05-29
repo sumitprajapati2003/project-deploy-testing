@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="trainee001" model="trainee.trainee">
+                <field name="name">sachin</field>
+                <field name="email">sachin@gmail.com</field>
+        </record>
+        <record id="trainee002" model="trainee.trainee">
+                <field name="name">kamlesh</field>
+                <field name="email">kam@gmail.com</field>
+        </record>
+        <record id="trainee003" model="trainee.trainee">
+                <field name="name">raju</field>
+                <field name="email">raj@gmail.com</field>
+        </record>
+        <record id="trainee004" model="trainee.trainee">
+                <field name="name">tom</field>
+                <field name="email">tom@gmail.com</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,860 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version:Odoo Server 17.0"
+"Report-Msgid-Bugs-To:"
+"POT-Creation-Date:2024-05-10 08:41+0000"
+"PO-Revision-Date:2024-05-10 08:41+0000"
+"Last-Translator:"
+"Language-Team:"
+"MIME-Version:1.0"
+"Content-Type:text/plain; charset=UTF-8"
+"Content-Transfer-Encoding:"
+"Plural-Forms:"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid ", and this session is <b>Completed</b>"
+msgstr ", અને આ સત્ર <b>પૂર્ણ</b> છે"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid ", and which will be completed by"
+msgstr ", અને જે દ્વારા પૂર્ણ કરવામાં આવશે"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid "<b>Company:</b>"
+msgstr "<b>કંપની:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                             <b>Job Title:</b>"
+msgstr ""
+"<br/>\n"
+" <b>નોકરીનું શીર્ષક:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Course Done:</b>"
+msgstr ""
+"<br/>\n"
+" <b>કોર્સ પૂર્ણ:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Salary:</b>"
+msgstr ""
+"<br/>\n"
+" <b>પગાર:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Student:</b>"
+msgstr ""
+"<br/>\n"
+" <b>વિદ્યાર્થી:</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.sale_report_inherit
+msgid "<strong>report customization</strong>"
+msgstr "<strong>કસ્ટમાઇઝેશનની જાણ કરો</strong>"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_needaction
+msgid "Action Needed"
+msgstr "ક્રિયા જરૂરી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_ids
+msgid "Activities"
+msgstr "પ્રવૃત્તિઓ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "પ્રવૃત્તિ અપવાદ શણગાર"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_state
+msgid "Activity State"
+msgstr "પ્રવૃત્તિ સ્થિતિ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "પ્રવૃત્તિ પ્રકાર આયકન"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__address
+msgid "Address"
+msgstr "સરનામું"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+msgid "Application Report"
+msgstr "એપ્લિકેશન રિપોર્ટ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_applications
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__applications_id
+#: model:ir.ui.menu,name:training_and_placement.menu_applications_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_applications_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_applications_tree
+msgid "Applications"
+msgstr "અરજીઓ"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_applications
+msgid "Applications Report"
+msgstr "એપ્લિકેશન રિપોર્ટ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_attachment_count
+msgid "Attachment Count"
+msgstr "જોડાણ ગણતરી"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_authority
+#: model:ir.model,name:training_and_placement.model_authority_authority
+#: model:ir.ui.menu,name:training_and_placement.menu_authority_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_authority_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_authority_tree
+msgid "Authority"
+msgstr "સત્તા"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "Cancel"
+msgstr "રદ કરો"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_company_career
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__career_ids
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_form
+msgid "Career"
+msgstr "કારકિર્દી"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_course_fee_wizard_window
+msgid "Change Course fee"
+msgstr "કોર્સ ફી બદલો"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+msgid "Change Fee"
+msgstr "બદલો ફી"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_company
+#: model:ir.model,name:training_and_placement.model_company_company
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__company_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__company_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__company_id
+#: model:ir.ui.menu,name:training_and_placement.menu_company_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_tree
+msgid "Company"
+msgstr "કંપની"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__company_id
+msgid "Company "
+msgstr "કંપની"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.company_career_action
+msgid "Company Career"
+msgstr "કંપની કારકિર્દી"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_company_company
+msgid "Company Report"
+msgstr "કંપની રિપોર્ટ"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_res_partner
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__contact_person
+msgid "Contact"
+msgstr "સંપર્ક કરો"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_course
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_res_partner__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_res_users__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__course_id
+#: model:ir.ui.menu,name:training_and_placement.menu_course_management
+msgid "Course"
+msgstr "અભ્યાસક્રમ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Course Duration"
+msgstr "કોર્સ સમયગાળો"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+msgid "Course Fee Wizard"
+msgstr "કોર્સ ફી વિઝાર્ડ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__started
+msgid "Course Started"
+msgstr "કોર્સ શરૂ કર્યો"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Course Trainer"
+msgstr "કોર્સ ટ્રેનર"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_placement_wizard_window
+msgid "Create Placement"
+msgstr "પ્લેસમેન્ટ બનાવો"
+
+#. module: training_and_placement
+#: model_terms:ir.actions.act_window,help:training_and_placement.company_career_action
+msgid "Create a new company career"
+msgstr "નવી કંપની કારકિર્દી બનાવો"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_session_report_wizard_window
+msgid "Create report"
+msgstr "રિપોર્ટ બનાવો"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__create_uid
+msgid "Created by"
+msgstr "દ્વારા બનાવવામાં"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__create_date
+msgid "Created on"
+msgstr "ના રોજ બનાવ્યું"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__description
+msgid "Description"
+msgstr "વર્ણન"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__detail
+msgid "Detail"
+msgstr "વિગત"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__display_name
+msgid "Display Name"
+msgstr "ડિસ્પ્લે નામ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__duration
+msgid "Duration (in hours)"
+msgstr "અવધિ (કલાકોમાં)"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__email
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__email
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__email
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__email
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Email"
+msgstr "ઈમેલ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__end_date
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "End Date"
+msgstr "અંતિમ તારીખ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Enrolled Student"
+msgstr "નોંધાયેલ વિદ્યાર્થી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__fees
+msgid "Fee"
+msgstr "ફી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__fees
+msgid "Fees"
+msgstr "ફી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_follower_ids
+msgid "Followers"
+msgstr "અનુયાયીઓ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "અનુયાયીઓ (ભાગીદારો)"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "ફોન્ટ અદ્ભુત આયકન દા.ત. એફએ-ટાસ્ક"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__from_date
+msgid "From Date"
+msgstr "તારીખ થી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__has_message
+msgid "Has Message"
+msgstr "સંદેશ છે"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__id
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__id
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__id
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__id
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__id
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__id
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__id
+msgid "ID"
+msgstr "ID"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_exception_icon
+msgid "Icon"
+msgstr "ચિહ્ન"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "અપવાદ પ્રવૃત્તિ સૂચવવા માટેનું ચિહ્ન."
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "જો ચકાસાયેલ હોય, તો નવા સંદેશાઓ માટે તમારું ધ્યાન જરૂરી છે."
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_error
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "જો ચેક કરેલ હોય, તો કેટલાક સંદેશાઓમાં ડિલિવરી ભૂલ છે."
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__image
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__image
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__image
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__image
+msgid "Image"
+msgstr "છબી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_is_follower
+msgid "Is Follower"
+msgstr "અનુયાયી છે"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__job_detail
+msgid "Job Detail"
+msgstr "જોબ વિગત"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__job_title
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__job_title
+msgid "Job Title"
+msgstr "જોબ શીર્ષક"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__write_uid
+msgid "Last Updated by"
+msgstr "દ્વારા છેલ્લે અપડેટ કરવામાં આવ્યું હતું"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__write_date
+msgid "Last Updated on"
+msgstr "છેલ્લે અપડેટ થયેલ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_error
+msgid "Message Delivery error"
+msgstr "સંદેશ વિતરણ ભૂલ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_ids
+msgid "Messages"
+msgstr "સંદેશાઓ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Mobile"
+msgstr "મોબાઈલ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_multi_step_wizard_window
+msgid "Multi Step WIzard"
+msgstr "મલ્ટી સ્ટેપ વિઝાર્ડ"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_multi_step_wizard
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Multi Step Wizard"
+msgstr "મલ્ટી સ્ટેપ વિઝાર્ડ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "મારી પ્રવૃત્તિની અંતિમ તારીખ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__name
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__name
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Name"
+msgstr "નામ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Next"
+msgstr "આગળ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "આગલી પ્રવૃત્તિની અંતિમ તારીખ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_summary
+msgid "Next Activity Summary"
+msgstr "આગામી પ્રવૃત્તિ સારાંશ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_type_id
+msgid "Next Activity Type"
+msgstr "આગામી પ્રવૃત્તિ પ્રકાર"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_needaction_counter
+msgid "Number of Actions"
+msgstr "ક્રિયાઓની સંખ્યા"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_error_counter
+msgid "Number of errors"
+msgstr "ભૂલોની સંખ્યા"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "ક્રિયાની જરૂર હોય તેવા સંદેશાઓની સંખ્યા"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "વિતરણ ભૂલ સાથે સંદેશાઓની સંખ્યા"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__pending
+msgid "Pending"
+msgstr "બાકી છે"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__phone
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__phone
+msgid "Phone"
+msgstr "ફોન"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_placement
+#: model:ir.model,name:training_and_placement.model_placement_placement
+#: model:ir.ui.menu,name:training_and_placement.menu_placement_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_tree
+msgid "Placement"
+msgstr "પ્લેસમેન્ટ"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid "Placement Report"
+msgstr "પ્લેસમેન્ટ રિપોર્ટ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__position_id
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__position
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__position
+msgid "Position"
+msgstr "પદ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Previous"
+msgstr "અગાઉના"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__rejected
+msgid "Rejected"
+msgstr "ફગાવી દીધી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__skill
+msgid "Req. Skill"
+msgstr "વિનંતી કૌશલ્ય"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_user_id
+msgid "Responsible User"
+msgstr "જવાબદાર વપરાશકર્તા"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS વિતરણ ભૂલ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__salary
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__salary
+msgid "Salary"
+msgstr "પગાર"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__selected
+msgid "Selected"
+msgstr "પસંદ કરેલ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_session
+#: model:ir.ui.menu,name:training_and_placement.menu_session_management
+msgid "Session"
+msgstr "સત્ર"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_session
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Session Report"
+msgstr "સત્ર અહેવાલ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__session_list_ids
+msgid "Sessions"
+msgstr "સત્રો"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__start_date
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Start Date"
+msgstr "પ્રારંભ તારીખ"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.action_state_as_rejected
+msgid "State as rejected"
+msgstr "નામંજૂર તરીકે રાજ્ય"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__state
+msgid "Status"
+msgstr "સ્થિતિ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"પ્રવૃતિઓ પર આધારિત સ્થિતિ\n"
+"ઓવરડ્યુ: નિયત તારીખ પહેલેથી જ પસાર થઈ ગઈ છે\n"
+"આજે: પ્રવૃત્તિની તારીખ આજની છે\n"
+"આયોજિત: ભાવિ પ્રવૃત્તિઓ."
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step1
+msgid "Step 1"
+msgstr "પગલું 1"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step2
+msgid "Step 2"
+msgstr "પગલું 2"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step3
+msgid "Step 3"
+msgstr "પગલું 3"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_trainee_trainee
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__student_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__student_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__student_id
+msgid "Student"
+msgstr "વિદ્યાર્થી"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Student Placed"
+msgstr "વિદ્યાર્થી મૂકાયો"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session is <b> Already Started</b> and taken by"
+msgstr "સત્ર <b>પહેલેથી જ શરૂ</b> અને દ્વારા લેવામાં આવ્યું છે"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session is<b> Already Started</b> and taught by"
+msgstr "સત્ર<b>પહેલેથી જ શરૂ</b> છે અને તેના દ્વારા શીખવવામાં આવે છે"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session will be starting from"
+msgstr "થી સત્ર શરૂ થશે"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__title
+msgid "Title"
+msgstr "શીર્ષક"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__to_date
+msgid "To Date"
+msgstr "આજ સુધી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__today
+msgid "Today"
+msgstr "આજે"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_trainee
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__trainee_ids
+#: model:ir.ui.menu,name:training_and_placement.menu_trainee_management
+msgid "Trainee"
+msgstr "તાલીમાર્થી"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__trainer_id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__trainer
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer"
+msgstr "ટ્રેનર"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer Information"
+msgstr "ટ્રેનર માહિતી"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer is Trainer1"
+msgstr "ટ્રેનર છે Trainer1"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer is not Trainer1"
+msgstr "ટ્રેનર ટ્રેનર1 નથી"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_course_course
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_tree
+msgid "Training Course"
+msgstr "તાલિમનો અભ્યાસક્રમ"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_session_session
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_tree
+msgid "Training Session"
+msgstr "તાલીમ સત્ર"
+
+#. module: training_and_placement
+#: model:ir.ui.menu,name:training_and_placement.training_and_placement_root
+msgid "Training and Placement"
+msgstr "તાલીમ અને પ્લેસમેન્ટ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "રેકોર્ડ પર અપવાદ પ્રવૃત્તિનો પ્રકાર."
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__vacancy
+msgid "Vacancy"
+msgstr "ખાલી જગ્યા"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__website
+msgid "Website"
+msgstr "વેબસાઈટ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__website_message_ids
+msgid "Website Messages"
+msgstr "વેબસાઇટ સંદેશાઓ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__website_message_ids
+msgid "Website communication history"
+msgstr "વેબસાઇટ સંચાર ઇતિહાસ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "and will be taken by"
+msgstr "અને દ્વારા લેવામાં આવશે"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_applications_applications
+msgid "applications"
+msgstr "એપ્લિકેશન્સ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "barcode"
+msgstr "બારકોડ"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.check_session_start_date_cron_ir_actions_server
+msgid "check session start date"
+msgstr "સત્રની શરૂઆતની તારીખ તપાસો"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_company
+msgid "company Report"
+msgstr "કંપની રિપોર્ટ"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_course_fee_wizard
+msgid "course fee wizard"
+msgstr "કોર્સ ફી વિઝાર્ડ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+msgid "create placement"
+msgstr "પ્લેસમેન્ટ બનાવો"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "create report"
+msgstr "અહેવાલ બનાવો"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__phone
+msgid "phone"
+msgstr "ફોન"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__placed_ids
+msgid "placed"
+msgstr "મૂકવામાં"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_placement_wizard
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+msgid "placement wizard"
+msgstr "પ્લેસમેન્ટ વિઝાર્ડ"
+
+#. module: training_and_placement
+#: model:course.course,description:training_and_placement.course01
+msgid "python info"
+msgstr "અજગર માહિતી"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.ir_cron_attendance_sheet_daily_if_session_ir_actions_server
+msgid "session cron"
+msgstr "સત્ર ક્રોન"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_session_report_wizard
+msgid "session report wizard"
+msgstr "સત્ર અહેવાલ વિઝાર્ડ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "session wizard"
+msgstr "સત્ર વિઝાર્ડ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_trainee_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_trainee_tree
+msgid "trainee"
+msgstr "તાલીમાર્થી"
+

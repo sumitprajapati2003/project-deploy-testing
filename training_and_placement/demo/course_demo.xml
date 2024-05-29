@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="course01" model="course.course">
+                <field name="name">python</field>
+                <field name="fees">10000</field>
+        </record>
+        <record id="course02" model="course.course">
+                <field name="name">Cyber security</field>
+                <field name="fees">12990</field>
+        </record>
+        <record id="course03" model="course.course">
+                <field name="name">mern</field>
+                <field name="fees">13000</field>
+        </record>
+        <record id="course04" model="course.course">
+                <field name="name">java</field>
+                <field name="fees">14000</field>
+        </record>
+    </data>
+</odoo>

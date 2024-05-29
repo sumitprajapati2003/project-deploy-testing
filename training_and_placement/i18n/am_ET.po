@@ -1,0 +1,860 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version:Odoo Server 17.0"
+"Report-Msgid-Bugs-To:"
+"POT-Creation-Date:2024-05-10 08:41+0000"
+"PO-Revision-Date:2024-05-10 08:41+0000"
+"Last-Translator:"
+"Language-Team:"
+"MIME-Version:1.0"
+"Content-Type:text/plain; charset=UTF-8"
+"Content-Transfer-Encoding:"
+"Plural-Forms:"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid ", and this session is <b>Completed</b>"
+msgstr ", እና ይህ ክፍለ ጊዜ <b>ተጠናቀቀ</b> ነው"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid ", and which will be completed by"
+msgstr ", እና በየትኛው ይጠናቀቃል"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid "<b>Company:</b>"
+msgstr "<b>ኩባንያ፡</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                             <b>Job Title:</b>"
+msgstr ""
+"<br/>\n"
+" <b>የስራ መጠሪያ፡</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Course Done:</b>"
+msgstr ""
+"<br/>\n"
+" <b>ኮርስ ተከናውኗል፡</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Salary:</b>"
+msgstr ""
+"<br/>\n"
+" <b>ደሞዝ፡</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid ""
+"<br/>\n"
+"                            <b>Student:</b>"
+msgstr ""
+"<br/>\n"
+" <b>ተማሪ፡</b>"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.sale_report_inherit
+msgid "<strong>report customization</strong>"
+msgstr "ማበጀትን ሪፖርት ያድርጉ</strong>"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_needaction
+msgid "Action Needed"
+msgstr "እርምጃ ያስፈልጋል"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_ids
+msgid "Activities"
+msgstr "እንቅስቃሴዎች"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "የእንቅስቃሴ ልዩ ማስጌጥ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_state
+msgid "Activity State"
+msgstr "የእንቅስቃሴ ሁኔታ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "የእንቅስቃሴ አይነት አዶ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__address
+msgid "Address"
+msgstr "አድራሻ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_applications_applications
+msgid "Application Report"
+msgstr "የመተግበሪያ ሪፖርት"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_applications
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__applications_id
+#: model:ir.ui.menu,name:training_and_placement.menu_applications_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_applications_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_applications_tree
+msgid "Applications"
+msgstr "መተግበሪያዎች"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_applications
+msgid "Applications Report"
+msgstr "የመተግበሪያዎች ሪፖርት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_attachment_count
+msgid "Attachment Count"
+msgstr "የአባሪ ብዛት"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_authority
+#: model:ir.model,name:training_and_placement.model_authority_authority
+#: model:ir.ui.menu,name:training_and_placement.menu_authority_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_authority_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_authority_tree
+msgid "Authority"
+msgstr "ስልጣን"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "Cancel"
+msgstr "ሰርዝ"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_company_career
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__career_ids
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_form
+msgid "Career"
+msgstr "ሙያ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_course_fee_wizard_window
+msgid "Change Course fee"
+msgstr "የኮርስ ክፍያ ለውጥ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+msgid "Change Fee"
+msgstr "ክፍያ ቀይር"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_company
+#: model:ir.model,name:training_and_placement.model_company_company
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__company_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__company_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__company_id
+#: model:ir.ui.menu,name:training_and_placement.menu_company_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_company_tree
+msgid "Company"
+msgstr "ኩባንያ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__company_id
+msgid "Company "
+msgstr "ኩባንያ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.company_career_action
+msgid "Company Career"
+msgstr "የኩባንያ ሥራ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_company_company
+msgid "Company Report"
+msgstr "የኩባንያ ሪፖርት"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_res_partner
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__contact_person
+msgid "Contact"
+msgstr "ተገናኝ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_course
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_res_partner__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_res_users__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__course_id
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__course_id
+#: model:ir.ui.menu,name:training_and_placement.menu_course_management
+msgid "Course"
+msgstr "ኮርስ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Course Duration"
+msgstr "የኮርሱ ቆይታ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_fee_wizard_form
+msgid "Course Fee Wizard"
+msgstr "የኮርስ ክፍያ አዋቂ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__started
+msgid "Course Started"
+msgstr "ኮርስ ተጀመረ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Course Trainer"
+msgstr "ኮርስ አሰልጣኝ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_placement_wizard_window
+msgid "Create Placement"
+msgstr "አቀማመጥ ይፍጠሩ"
+
+#. module: training_and_placement
+#: model_terms:ir.actions.act_window,help:training_and_placement.company_career_action
+msgid "Create a new company career"
+msgstr "አዲስ የኩባንያ ሥራ ይፍጠሩ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_session_report_wizard_window
+msgid "Create report"
+msgstr "ሪፖርት ፍጠር"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__create_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__create_uid
+msgid "Created by"
+msgstr "የተፈጠረ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__create_date
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__create_date
+msgid "Created on"
+msgstr "ላይ ተፈጠረ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__description
+msgid "Description"
+msgstr "መግለጫ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__detail
+msgid "Detail"
+msgstr "ዝርዝር"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__display_name
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__display_name
+msgid "Display Name"
+msgstr "መጠሪያው ስም"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__duration
+msgid "Duration (in hours)"
+msgstr "የሚፈጀው ጊዜ (በሰዓታት ውስጥ)"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__email
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__email
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__email
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__email
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Email"
+msgstr "ኢሜይል"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__end_date
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "End Date"
+msgstr "የመጨረሻ ቀን"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Enrolled Student"
+msgstr "የተመዘገበ ተማሪ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__fees
+msgid "Fee"
+msgstr "ክፍያ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__fees
+msgid "Fees"
+msgstr "ክፍያዎች"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_follower_ids
+msgid "Followers"
+msgstr "ተከታዮች"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "ተከታዮች (አጋሮች)"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "የፊደል ግሩም አዶ ለምሳሌ. fa-ተግባራት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__from_date
+msgid "From Date"
+msgstr "ከቀን"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__has_message
+msgid "Has Message"
+msgstr "መልእክት አለው።"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__id
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__id
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__id
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__id
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__id
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__id
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__id
+msgid "ID"
+msgstr "መታወቂያ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_exception_icon
+msgid "Icon"
+msgstr "አዶ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "ልዩ እንቅስቃሴን ለማመልከት አዶ።"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "ምልክት ካደረጉ፣ አዲስ መልዕክቶች የእርስዎን ትኩረት ይፈልጋሉ።"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_error
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "ምልክት ካደረጉ፣ አንዳንድ መልዕክቶች የማድረስ ስህተት አለባቸው።"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__image
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__image
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__image
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__image
+msgid "Image"
+msgstr "ምስል"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_is_follower
+msgid "Is Follower"
+msgstr "ተከታይ ነው።"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__job_detail
+msgid "Job Detail"
+msgstr "የስራ ዝርዝር"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__job_title
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__job_title
+msgid "Job Title"
+msgstr "የስራ መደቡ መጠሪያ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__write_uid
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__write_uid
+msgid "Last Updated by"
+msgstr "መጨረሻ የተሻሻለው በ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_course_fee_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__write_date
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__write_date
+msgid "Last Updated on"
+msgstr "መጨረሻ የዘመነው በርቷል።"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_error
+msgid "Message Delivery error"
+msgstr "የመልእክት ማቅረቢያ ስህተት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_ids
+msgid "Messages"
+msgstr "መልዕክቶች"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Mobile"
+msgstr "ሞባይል"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_multi_step_wizard_window
+msgid "Multi Step WIzard"
+msgstr "ባለብዙ ደረጃ ዊዛርድ"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_multi_step_wizard
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Multi Step Wizard"
+msgstr "ባለብዙ ደረጃ አዋቂ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "የእኔ እንቅስቃሴ የመጨረሻ ቀን"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__name
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__name
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__name
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__name
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Name"
+msgstr "ስም"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Next"
+msgstr "ቀጥሎ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "የሚቀጥለው የእንቅስቃሴ ገደብ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_summary
+msgid "Next Activity Summary"
+msgstr "ቀጣይ የእንቅስቃሴ ማጠቃለያ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_type_id
+msgid "Next Activity Type"
+msgstr "ቀጣይ የእንቅስቃሴ አይነት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_needaction_counter
+msgid "Number of Actions"
+msgstr "የተግባሮች ብዛት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_error_counter
+msgid "Number of errors"
+msgstr "የስህተት ብዛት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "እርምጃ የሚያስፈልጋቸው መልዕክቶች ብዛት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "የማድረስ ስህተት ያለባቸው መልዕክቶች ብዛት"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__pending
+msgid "Pending"
+msgstr "በመጠባበቅ ላይ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__phone
+#: model:ir.model.fields,field_description:training_and_placement.field_trainee_trainee__phone
+msgid "Phone"
+msgstr "ስልክ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_placement
+#: model:ir.model,name:training_and_placement.model_placement_placement
+#: model:ir.ui.menu,name:training_and_placement.menu_placement_management
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_tree
+msgid "Placement"
+msgstr "አቀማመጥ"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_placement_placement
+msgid "Placement Report"
+msgstr "የምደባ ሪፖርት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__position_id
+#: model:ir.model.fields,field_description:training_and_placement.field_authority_authority__position
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__position
+msgid "Position"
+msgstr "አቀማመጥ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_multi_step_wizard_form
+msgid "Previous"
+msgstr "ቀዳሚ"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__rejected
+msgid "Rejected"
+msgstr "ውድቅ ተደርጓል"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__skill
+msgid "Req. Skill"
+msgstr "ጥያቄ ችሎታ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__activity_user_id
+msgid "Responsible User"
+msgstr "ኃላፊነት የሚሰማው ተጠቃሚ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "የኤስኤምኤስ አቅርቦት ስህተት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__salary
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__salary
+msgid "Salary"
+msgstr "ደሞዝ"
+
+#. module: training_and_placement
+#: model:ir.model.fields.selection,name:training_and_placement.selection__applications_applications__state__selected
+msgid "Selected"
+msgstr "ተመርጧል"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_session
+#: model:ir.ui.menu,name:training_and_placement.menu_session_management
+msgid "Session"
+msgstr "ክፍለ ጊዜ"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_session
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Session Report"
+msgstr "የክፍለ ጊዜ ሪፖርት"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__session_list_ids
+msgid "Sessions"
+msgstr "ክፍለ-ጊዜዎች"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__start_date
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Start Date"
+msgstr "የመጀመሪያ ቀን"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.action_state_as_rejected
+msgid "State as rejected"
+msgstr "ውድቅ እንደሆነ ይግለጹ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__state
+msgid "Status"
+msgstr "ሁኔታ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"በእንቅስቃሴዎች ላይ የተመሰረተ ሁኔታ\n"
+"ጊዜ ያለፈበት፡ የማብቂያ ቀን አስቀድሞ አልፏል\n"
+"ዛሬ፡ የተግባር ቀን ዛሬ ነው\n"
+"በእቅድ ተይዟል፡ የወደፊት ተግባራት።"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step1
+msgid "Step 1"
+msgstr "ደረጃ 1"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step2
+msgid "Step 2"
+msgstr "ደረጃ 2"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_multi_step_wizard__step3
+msgid "Step 3"
+msgstr "ደረጃ 3"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_trainee_trainee
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__student_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_placement__student_id
+#: model:ir.model.fields,field_description:training_and_placement.field_placement_wizard__student_id
+msgid "Student"
+msgstr "ተማሪ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+msgid "Student Placed"
+msgstr "ተማሪ ተቀምጧል"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session is <b> Already Started</b> and taken by"
+msgstr "ክፍለ-ጊዜው <b> አስቀድሞ ተጀምሯል</b> እና የተወሰደ ነው።"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session is<b> Already Started</b> and taught by"
+msgstr "ክፍለ-ጊዜው<b>ቀድሞውኑ ተጀምሯል</b>እና አስተማሪ ነው።"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "The session will be starting from"
+msgstr "ክፍለ-ጊዜው የሚጀምረው ከ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__title
+msgid "Title"
+msgstr "ርዕስ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_report_wizard__to_date
+msgid "To Date"
+msgstr "እስከ ዛሬ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__today
+msgid "Today"
+msgstr "ዛሬ"
+
+#. module: training_and_placement
+#: model:ir.actions.act_window,name:training_and_placement.action_trainee
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__trainee_ids
+#: model:ir.ui.menu,name:training_and_placement.menu_trainee_management
+msgid "Trainee"
+msgstr "ሰልጣኝ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__trainer_id
+#: model:ir.model.fields,field_description:training_and_placement.field_session_session__trainer
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer"
+msgstr "አሰልጣኝ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer Information"
+msgstr "የአሰልጣኝ መረጃ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer is Trainer1"
+msgstr "አሰልጣኙ አሰልጣኝ ነው1"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "Trainer is not Trainer1"
+msgstr "አሰልጣኝ አሰልጣኝ አይደለም1"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_course_course
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_course_tree
+msgid "Training Course"
+msgstr "የስልጠና ኮርስ"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_session_session
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_tree
+msgid "Training Session"
+msgstr "የስልጠና ክፍለ ጊዜ"
+
+#. module: training_and_placement
+#: model:ir.ui.menu,name:training_and_placement.training_and_placement_root
+msgid "Training and Placement"
+msgstr "ስልጠና እና አቀማመጥ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "በመዝገብ ላይ ያለ ልዩ እንቅስቃሴ አይነት።"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_career__vacancy
+msgid "Vacancy"
+msgstr "ክፍት የስራ ቦታ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__website
+msgid "Website"
+msgstr "ድህረገፅ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_applications_applications__website_message_ids
+msgid "Website Messages"
+msgstr "የድር ጣቢያ መልዕክቶች"
+
+#. module: training_and_placement
+#: model:ir.model.fields,help:training_and_placement.field_applications_applications__website_message_ids
+msgid "Website communication history"
+msgstr "የድር ጣቢያ የግንኙነት ታሪክ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "and will be taken by"
+msgstr "እና ይወሰዳል"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_applications_applications
+msgid "applications"
+msgstr "መተግበሪያዎች"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.report_session_session
+msgid "barcode"
+msgstr "የአሞሌ ኮድ"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.check_session_start_date_cron_ir_actions_server
+msgid "check session start date"
+msgstr "የክፍለ-ጊዜ መጀመሪያ ቀንን ያረጋግጡ"
+
+#. module: training_and_placement
+#: model:ir.actions.report,name:training_and_placement.action_report_company
+msgid "company Report"
+msgstr "ኩባንያ ሪፖርት"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_course_fee_wizard
+msgid "course fee wizard"
+msgstr "የኮርስ ክፍያ ጠንቋይ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+msgid "create placement"
+msgstr "አቀማመጥ መፍጠር"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "create report"
+msgstr "ሪፖርት ይፍጠሩ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_company_company__phone
+msgid "phone"
+msgstr "ስልክ"
+
+#. module: training_and_placement
+#: model:ir.model.fields,field_description:training_and_placement.field_course_course__placed_ids
+msgid "placed"
+msgstr "ተቀምጧል"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_placement_wizard
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_placement_wizard_form
+msgid "placement wizard"
+msgstr "አቀማመጥ ጠንቋይ"
+
+#. module: training_and_placement
+#: model:course.course,description:training_and_placement.course01
+msgid "python info"
+msgstr "የ Python መረጃ"
+
+#. module: training_and_placement
+#: model:ir.actions.server,name:training_and_placement.ir_cron_attendance_sheet_daily_if_session_ir_actions_server
+msgid "session cron"
+msgstr "ክፍለ ጊዜ ክሮን"
+
+#. module: training_and_placement
+#: model:ir.model,name:training_and_placement.model_session_report_wizard
+msgid "session report wizard"
+msgstr "የክፍለ ጊዜ ሪፖርት አዋቂ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_session_report_wizard_form
+msgid "session wizard"
+msgstr "ክፍለ ጠንቋይ"
+
+#. module: training_and_placement
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_trainee_form
+#: model_terms:ir.ui.view,arch_db:training_and_placement.view_trainee_tree
+msgid "trainee"
+msgstr "ሰልጣኝ"
+
